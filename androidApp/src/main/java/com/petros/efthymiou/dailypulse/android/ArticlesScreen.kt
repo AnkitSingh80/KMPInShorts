@@ -1,23 +1,22 @@
-package com.petros.efthymiou.dailypulse.android.screens
+package com.example.inshort.android
 
 
+import android.content.res.Resources
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.pager.VerticalPager
+import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Info
-import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
@@ -31,25 +30,34 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
-import com.petros.efthymiou.dailypulse.articles.Article
-import com.petros.efthymiou.dailypulse.articles.ArticlesViewModel
+import com.example.inshort.articles.Article
+import com.example.inshort.di.ArticleViewModel
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun ArticlesScreen(
     onAboutButtonClick: () -> Unit,
-    articlesViewModel: ArticlesViewModel,
+    articlesViewModel: ArticleViewModel,
 ) {
     val articlesState = articlesViewModel.articlesState.collectAsState()
-
-    Column {
+    val articles = articlesState.value.articles
+    val pagerState = rememberPagerState(pageCount = { articles.size })
+    val screenWidth = Resources.getSystem().displayMetrics.widthPixels
+    val screenHeight = (9.0 / 16.0 * screenWidth).toInt()
+    Column(modifier = Modifier.fillMaxSize()) {
         AppBar(onAboutButtonClick)
-
         if (articlesState.value.loading)
             Loader()
         if (articlesState.value.error != null)
             ErrorMessage(articlesState.value.error!!)
-        if (articlesState.value.articles.isNotEmpty())
-            ArticlesListView(articlesViewModel.articlesState.value.articles)
+        if (articles.isNotEmpty()) {
+            VerticalPager(
+                state = pagerState,
+                modifier = Modifier.fillMaxSize()
+            ) { page ->
+                ArticleItemView(articles[page], screenWidth, screenHeight)
+            }
+        }
     }
 }
 
@@ -72,41 +80,36 @@ private fun AppBar(
 }
 
 @Composable
-fun ArticlesListView(articles: List<Article>) {
-
-    LazyColumn(modifier = Modifier.fillMaxSize()) {
-        items(articles) { article ->
-            ArticleItemView(article = article)
-        }
-    }
-}
-
-@Composable
-fun ArticleItemView(article: Article) {
-
+fun ArticleItemView(article: Article, screenWidth: Int, screenHeight: Int) {
+    val imageUrl = article.imageUrl.replace("<width>", screenWidth.toString())
+        .replace("<height>", screenHeight.toString())
     Column(
         modifier = Modifier
-            .fillMaxWidth()
-            .padding(16.dp)
+            .fillMaxSize()
     ) {
         AsyncImage(
-            model = article.imageUrl,
+            modifier = Modifier.aspectRatio(16/9f),
+            model = imageUrl,
             contentDescription = null
         )
+
         Spacer(modifier = Modifier.height(4.dp))
+
         Text(
+            modifier = Modifier.padding(16.dp),
             text = article.title,
             style = TextStyle(fontWeight = FontWeight.Bold, fontSize = 22.sp)
         )
-        Spacer(modifier = Modifier.height(8.dp))
-        Text(text = article.desc)
-        Spacer(modifier = Modifier.height(4.dp))
+
         Text(
             text = article.date,
             style = TextStyle(color = Color.Gray),
-            modifier = Modifier.align(Alignment.End)
+            modifier = Modifier.align(Alignment.Start).padding(start = 16.dp)
         )
-        Spacer(modifier = Modifier.height(4.dp))
+        Spacer(modifier = Modifier.height(12.dp))
+        Text(
+            modifier = Modifier.padding(horizontal = 16.dp),
+            text = article.desc)
     }
 }
 
@@ -116,11 +119,11 @@ fun Loader() {
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        CircularProgressIndicator(
+        /*CircularProgressIndicator(
             modifier = Modifier.width(64.dp),
             color = MaterialTheme.colorScheme.surfaceVariant,
             trackColor = MaterialTheme.colorScheme.secondary,
-        )
+        )*/
     }
 }
 

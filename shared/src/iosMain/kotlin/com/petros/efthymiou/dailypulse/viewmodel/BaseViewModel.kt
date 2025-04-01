@@ -1,4 +1,4 @@
-package com.petros.efthymiou.dailypulse
+package com.example.newsapp.viewmodel
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
