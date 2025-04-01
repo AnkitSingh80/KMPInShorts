@@ -1,22 +1,28 @@
-package com.example.inshort.android
+package com.petros.efthymiou.dailypulse.android
 
 
 import android.content.res.Resources
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.VerticalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
@@ -30,14 +36,15 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
-import com.example.inshort.articles.Article
-import com.example.inshort.di.ArticleViewModel
+import com.petros.efthymiou.dailypulse.articles.Article
+import com.petros.efthymiou.dailypulse.articles.ArticlesViewModel
+import com.petros.efthymiou.dailypulse.articles.WebStory
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun ArticlesScreen(
     onAboutButtonClick: () -> Unit,
-    articlesViewModel: ArticleViewModel,
+    articlesViewModel: ArticlesViewModel,
 ) {
     val articlesState = articlesViewModel.articlesState.collectAsState()
     val articles = articlesState.value.articles
@@ -55,7 +62,46 @@ fun ArticlesScreen(
                 state = pagerState,
                 modifier = Modifier.fillMaxSize()
             ) { page ->
-                ArticleItemView(articles[page], screenWidth, screenHeight)
+                val article = articles[page]
+                if (article.tn == "webstory") {
+                    HorizontalPagerContent(article.list, screenWidth)
+                } else {
+                    ArticleItemView(article, screenWidth, screenHeight)
+                }
+            }
+        }
+    }
+}
+
+@OptIn(ExperimentalFoundationApi::class)
+@Composable
+fun HorizontalPagerContent(article: List<WebStory>, screenWidth: Int) {
+    val horizontalPagerState = rememberPagerState(pageCount = { 5 }) // 5 horizontal pages
+    val height = Resources.getSystem().displayMetrics.heightPixels
+
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center
+    ) {
+        //Text(text = "Vertical Page: ${pageIndex + 1}", style = MaterialTheme.typography.titleLarge)
+       // Spacer(modifier = Modifier.height(16.dp))
+
+        HorizontalPager(state = horizontalPagerState) { page ->
+            Box(
+                modifier = Modifier
+                    .fillMaxHeight()
+                    .fillMaxSize(),
+                contentAlignment = Alignment.Center
+            ) {
+                val webStory = article[page]
+                val imageUrl = webStory.imageUrl.replace("<width>", screenWidth.toString())
+                 .replace("<height>", height.toString())
+                AsyncImage(
+                    modifier = Modifier.fillMaxSize(),
+                    model = imageUrl,
+                    contentDescription = null
+                )
+
             }
         }
     }
@@ -119,11 +165,11 @@ fun Loader() {
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        /*CircularProgressIndicator(
+        CircularProgressIndicator(
             modifier = Modifier.width(64.dp),
             color = MaterialTheme.colorScheme.surfaceVariant,
             trackColor = MaterialTheme.colorScheme.secondary,
-        )*/
+        )
     }
 }
 

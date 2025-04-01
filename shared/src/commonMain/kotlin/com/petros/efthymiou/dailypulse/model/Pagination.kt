@@ -1,4 +1,4 @@
-package com.example.newsapp.model
+package com.petros.efthymiou.dailypulse.model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

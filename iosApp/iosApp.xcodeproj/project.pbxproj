@@ -13,7 +13,11 @@
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 		8E304DF92B14E290006A6353 /* ArticlesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E304DF82B14E290006A6353 /* ArticlesScreen.swift */; };
 		8ECF34982B0F683E00AA7F50 /* AboutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECF34972B0F683E00AA7F50 /* AboutListView.swift */; };
-		8ECF349A2B0F69BD00AA7F50 /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECF34992B0F69BD00AA7F50 /* AboutScreen.swift */; };
+		BCEF8AA42D97D6AE006F4ED6 /* WebStoriesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AA32D97D6AE006F4ED6 /* WebStoriesItem.swift */; };
+		BCEF8AA62D97D6AE006F4ED6 /* AppAsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AA12D97D6AE006F4ED6 /* AppAsyncImageView.swift */; };
+		BCEF8AA82D97D72F006F4ED6 /* ShortsView 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AA72D97D72F006F4ED6 /* ShortsView 2.swift */; };
+		BCEF8AB22D981493006F4ED6 /* HorizontalStoryScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AB12D981493006F4ED6 /* HorizontalStoryScrollView.swift */; };
+		BCEF8AB42D9814F8006F4ED6 /* WebStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AB32D9814F8006F4ED6 /* WebStoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,7 +42,11 @@
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E304DF82B14E290006A6353 /* ArticlesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesScreen.swift; sourceTree = "<group>"; };
 		8ECF34972B0F683E00AA7F50 /* AboutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutListView.swift; sourceTree = "<group>"; };
-		8ECF34992B0F69BD00AA7F50 /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
+		BCEF8AA12D97D6AE006F4ED6 /* AppAsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAsyncImageView.swift; sourceTree = "<group>"; };
+		BCEF8AA32D97D6AE006F4ED6 /* WebStoriesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebStoriesItem.swift; sourceTree = "<group>"; };
+		BCEF8AA72D97D72F006F4ED6 /* ShortsView 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShortsView 2.swift"; sourceTree = "<group>"; };
+		BCEF8AB12D981493006F4ED6 /* HorizontalStoryScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalStoryScrollView.swift; sourceTree = "<group>"; };
+		BCEF8AB32D9814F8006F4ED6 /* WebStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebStoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +108,11 @@
 		8E304DF72B14E26C006A6353 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				8ECF34992B0F69BD00AA7F50 /* AboutScreen.swift */,
+				BCEF8AB12D981493006F4ED6 /* HorizontalStoryScrollView.swift */,
+				BCEF8AA72D97D72F006F4ED6 /* ShortsView 2.swift */,
+				BCEF8AB32D9814F8006F4ED6 /* WebStoryView.swift */,
+				BCEF8AA12D97D6AE006F4ED6 /* AppAsyncImageView.swift */,
+				BCEF8AA32D97D6AE006F4ED6 /* WebStoriesItem.swift */,
 				8ECF34972B0F683E00AA7F50 /* AboutListView.swift */,
 				8E304DF82B14E290006A6353 /* ArticlesScreen.swift */,
 			);
@@ -200,10 +212,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E304DF92B14E290006A6353 /* ArticlesScreen.swift in Sources */,
+				BCEF8AA42D97D6AE006F4ED6 /* WebStoriesItem.swift in Sources */,
+				BCEF8AA62D97D6AE006F4ED6 /* AppAsyncImageView.swift in Sources */,
 				8ECF34982B0F683E00AA7F50 /* AboutListView.swift in Sources */,
+				BCEF8AB42D9814F8006F4ED6 /* WebStoryView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				BCEF8AA82D97D72F006F4ED6 /* ShortsView 2.swift in Sources */,
+				BCEF8AB22D981493006F4ED6 /* HorizontalStoryScrollView.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
-				8ECF349A2B0F69BD00AA7F50 /* AboutScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

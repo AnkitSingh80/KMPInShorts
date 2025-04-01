@@ -39,7 +39,7 @@ struct ArticlesScreen: View {
     
     var body: some View {
         VStack {
-            AppBar()
+            //AppBar()
             
             if viewModel.articlesState.loading {
                 Loader()
@@ -50,12 +50,31 @@ struct ArticlesScreen: View {
             }
             
             if(!viewModel.articlesState.articles.isEmpty) {
-                ScrollView {
-                    LazyVStack(spacing: 10) {
-                        ForEach(viewModel.articlesState.articles, id: \.self) { article in
-                            ArticleItemView(article: article)
+                NavigationView {
+                    ScrollView(.vertical, showsIndicators: false) {
+                        LazyVStack(spacing: 0) {
+                            ForEach(viewModel.articlesState.articles, id: \.self) { article in
+                                if article.tn == "webstory" {
+                                    ScrollView(.horizontal, showsIndicators: false){
+                                        LazyHStack(){
+                                            ForEach(article.list, id: \.self){
+                                               story in
+                                                WebStoryView(webStory: story)
+                                           }
+                                        }.scrollTargetLayout()
+                                    }
+                                    .scrollTargetBehavior(.paging)
+                                    .ignoresSafeArea(.all)
+                                }
+                                  else {
+                                ShortsView(article: article)
+                                        .frame(height: UIScreen.main.bounds.height)
+                                }
+                            }
                         }
+                        .scrollTargetLayout()
                     }
+                    .scrollTargetBehavior(.paging)
                 }
             }
             

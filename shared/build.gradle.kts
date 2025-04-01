@@ -40,6 +40,8 @@ kotlin {
 
         val androidMain by getting {
             dependencies {
+                implementation(libs.androidx.activity.compose)
+                implementation(libs.ktor.client.android)
                 implementation(libs.androidx.lifecycle.viewmodel.ktx)
                 implementation(libs.ktor.client.android)
             }

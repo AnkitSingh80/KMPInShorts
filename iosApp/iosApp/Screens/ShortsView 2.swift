@@ -6,20 +6,27 @@
 //
 
 import SwiftUI
+import shared
 
 struct ShortsView: View {
- //   let article: Article
+    let article: Article
     var body: some View {
+        let screenWidth = UIScreen.main.bounds.width
+              let screenHeight = (9.0 / 16.0) * screenWidth
+
+              let imageUrl = article.imageUrl
+                  .replacingOccurrences(of: "<width>", with: "\(Int(screenWidth))")
+                  .replacingOccurrences(of: "<height>", with: "\(Int(screenHeight))")
         VStack {
-            AppAsyncImageView(url:"https://picsum.photos/200/300")
-            Text("Mahindra XUV700 Ebon Edition (2021): Stealthy Elegance Unveiled")
+            AppAsyncImageView(url:imageUrl)
+            Text(article.title)
                 .padding(.top, 10)
                 .font(.system(size: 18))
                 .lineSpacing(CGFloat(4))
                 .foregroundStyle(.black)
                 .padding(.horizontal, 9)
             
-            Text("28 minutes ago | By: Pallavi Mehta")
+            Text(article.date)
                 .padding(.top, 10)
                 .font(.system(size: 12))
                 .lineSpacing(CGFloat(4))
@@ -28,7 +35,7 @@ struct ShortsView: View {
                 .padding(.horizontal, 9)
             
             
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur non nulla sitcupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur non nulla sit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur non nulla sitcupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur non nulla sit pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur non nulla sitcupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur non nulla sit")
+            Text(article.desc)
                 .padding(.top, 10)
                 .lineLimit(10)
                 .truncationMode(.tail)
@@ -47,6 +54,7 @@ struct ShortsView: View {
             .ignoresSafeArea(.all)
     }
 }
+
 
 #Preview {
    // ShortsView()

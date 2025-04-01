@@ -1,4 +1,4 @@
-package com.example.newsapp.viewmodel
+package com.petros.efthymiou.dailypulse.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

@@ -1,3 +1,4 @@
+/*
 package com.petros.efthymiou.dailypulse.android
 
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,9 +10,6 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.petros.efthymiou.dailypulse.android.screens.AboutScreen
-import com.petros.efthymiou.dailypulse.android.screens.ArticlesScreen
-import com.petros.efthymiou.dailypulse.android.screens.Screens
 import com.petros.efthymiou.dailypulse.articles.ArticlesViewModel
 
 @Composable
@@ -53,4 +51,4 @@ fun AppNavHost(
             )
         }
     }
-}
+}*/

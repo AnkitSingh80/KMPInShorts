@@ -1,5 +1,7 @@
-package com.example.newsapp.model
+package com.petros.efthymiou.dailypulse.model
 
+import com.petros.efthymiou.dailypulse.model.Author
+import com.petros.efthymiou.dailypulse.model.ChildrenItem
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
