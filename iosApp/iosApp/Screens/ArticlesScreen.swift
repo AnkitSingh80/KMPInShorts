@@ -74,6 +74,7 @@ struct ArticlesScreen: View {
                         }
                         .scrollTargetLayout()
                     }
+                    .ignoresSafeArea(.all)
                     .scrollTargetBehavior(.paging)
                 }
             }
