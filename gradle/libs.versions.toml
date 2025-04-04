@@ -1,7 +1,7 @@
 [versions]
 agp = "8.2.2"
 coilCompose = "2.5.0"
-kotlin = "2.0.0"
+kotlin = "1.9.22"
 compose = "1.5.1"
 compose-compiler = "1.5.3"
 compose-material3 = "1.1.2"
@@ -13,6 +13,8 @@ ktorClient = "2.3.5"
 kotlinxDatetime = "0.4.1"
 ksp = "2.0.20-1.0.25"
 room = "2.6.1"
+skie = "0.6.3"
+compose_jet = "1.5.12"
 
 
 [libraries]
@@ -45,5 +47,6 @@ kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
-compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.compose", version.ref = "compose_jet" }
 room = { id = "androidx.room", version.ref = "room" }
+skie = { id = "co.touchlab.skie", version.ref = "skie" }
