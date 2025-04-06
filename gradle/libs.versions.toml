@@ -1,6 +1,7 @@
 [versions]
 agp = "8.2.2"
 coilCompose = "2.5.0"
+koinCore = "4.0.0"
 kotlin = "1.9.22"
 compose = "1.5.1"
 compose-compiler = "1.5.3"
@@ -11,16 +12,22 @@ lifecycleViewmodelKtx = "2.6.2"
 navigationCompose = "2.7.5"
 ktorClient = "2.3.5"
 kotlinxDatetime = "0.4.1"
-ksp = "2.0.20-1.0.25"
-room = "2.6.1"
+ksp = "1.9.22-1.0.17"
+room = "2.7.0-alpha08"
+runtime = "1.5.5"
 skie = "0.6.3"
 compose_jet = "1.5.12"
-
+sqlite = "2.5.0-alpha08"
+delight = "1.5.5"
 
 [libraries]
+android-driver = { module = "com.squareup.sqldelight:android-driver", version.ref = "runtime" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+coroutines-extensions = { module = "com.squareup.sqldelight:coroutines-extensions", version.ref = "runtime" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinCore" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koinCore" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
@@ -37,8 +44,11 @@ ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx
 ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktorClient" }
 ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktorClient" }
 ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktorClient" }
+native-driver = { module = "com.squareup.sqldelight:native-driver", version.ref = "runtime" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
-
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+runtime = { module = "com.squareup.sqldelight:runtime", version.ref = "runtime" }
+sqlite-bundled = { module = "androidx.sqlite:sqlite-bundled", version.ref = "sqlite" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -50,3 +60,4 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 compose-compiler = { id = "org.jetbrains.compose", version.ref = "compose_jet" }
 room = { id = "androidx.room", version.ref = "room" }
 skie = { id = "co.touchlab.skie", version.ref = "skie" }
+sqlDelight = {id = "com.squareup.sqldelight", version.ref = "delight"}

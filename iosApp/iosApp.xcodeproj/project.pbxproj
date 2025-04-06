@@ -18,6 +18,7 @@
 		BCEF8AA82D97D72F006F4ED6 /* ShortsView 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AA72D97D72F006F4ED6 /* ShortsView 2.swift */; };
 		BCEF8AB22D981493006F4ED6 /* HorizontalStoryScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AB12D981493006F4ED6 /* HorizontalStoryScrollView.swift */; };
 		BCEF8AB42D9814F8006F4ED6 /* WebStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AB32D9814F8006F4ED6 /* WebStoryView.swift */; };
+		BCEF8AD62DA25DC4006F4ED6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEF8AD52DA25DC4006F4ED6 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 		BCEF8AA72D97D72F006F4ED6 /* ShortsView 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShortsView 2.swift"; sourceTree = "<group>"; };
 		BCEF8AB12D981493006F4ED6 /* HorizontalStoryScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalStoryScrollView.swift; sourceTree = "<group>"; };
 		BCEF8AB32D9814F8006F4ED6 /* WebStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebStoryView.swift; sourceTree = "<group>"; };
+		BCEF8AD52DA25DC4006F4ED6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCEF8AD62DA25DC4006F4ED6 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +104,7 @@
 		7555FFB0242A642200829871 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BCEF8AD52DA25DC4006F4ED6 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

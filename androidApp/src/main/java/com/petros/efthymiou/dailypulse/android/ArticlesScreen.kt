@@ -54,7 +54,7 @@ fun ArticlesScreen(
     Column(modifier = Modifier.fillMaxSize()) {
         AppBar(onAboutButtonClick)
         if (articlesState.value.loading)
-            Loader()
+            //Loader()
         if (articlesState.value.error != null)
             ErrorMessage(articlesState.value.error!!)
         if (articles.isNotEmpty()) {

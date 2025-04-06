@@ -1,5 +1,5 @@
 /*
-package com.petros.efthymiou.dailypulse.android
+package com.petros.efthymiou.dailypulse.sqldelight.petros.efthymiou.dailypulse.android
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -10,7 +10,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.petros.efthymiou.dailypulse.articles.ArticlesViewModel
+import com.petros.efthymiou.dailypulse.sqldelight.petros.efthymiou.dailypulse.articles.ArticlesViewModel
 
 @Composable
 fun AppScaffold(articlesViewModel: ArticlesViewModel) {

@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.skie)
     kotlin("plugin.serialization") version "1.9.20"
+    alias(libs.plugins.sqlDelight)
+
 }
 
 @OptIn(org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi::class)
@@ -29,15 +31,6 @@ kotlin {
     }
 
     sourceSets {
-        val commonMain by getting {
-            dependencies {
-                implementation(libs.kotlinx.coroutines.core)
-                implementation(libs.ktor.client.core)
-                implementation(libs.ktor.client.content.negotiation)
-                implementation(libs.ktor.serialization.kotlinx.json)
-                implementation(libs.kotlinx.datetime)
-            }
-        }
 
         val androidMain by getting {
             dependencies {
@@ -45,12 +38,33 @@ kotlin {
                 implementation(libs.ktor.client.android)
                 implementation(libs.androidx.lifecycle.viewmodel.ktx)
                 implementation(libs.ktor.client.android)
+                implementation(libs.android.driver)
+                implementation(libs.koin.android)
+
+            }
+        }
+
+
+        val commonMain by getting {
+            dependencies {
+                implementation(libs.kotlinx.coroutines.core)
+                implementation(libs.ktor.client.core)
+                implementation(libs.ktor.client.content.negotiation)
+                implementation(libs.ktor.serialization.kotlinx.json)
+                implementation(libs.kotlinx.datetime)
+
+                implementation(libs.runtime)
+                implementation(libs.coroutines.extensions)
+                implementation(libs.koin.core) // Or latest
+
             }
         }
 
         val iosMain by getting {
             dependencies {
                 implementation(libs.ktor.client.darwin)
+                implementation(libs.native.driver)
+
             }
         }
 
@@ -62,6 +76,13 @@ kotlin {
     }
 }
 
+sqldelight {
+    database("AppDatabase") {
+        packageName = "com.petros.efthymiou.dailypulse.sqldelight"
+        sourceFolders = listOf("sqldelight")
+
+    }
+}
 android {
     namespace = "com.petros.efthymiou.dailypulse"
     compileSdk = 34
@@ -69,3 +90,6 @@ android {
         minSdk = 24
     }
 }
+
+
+
