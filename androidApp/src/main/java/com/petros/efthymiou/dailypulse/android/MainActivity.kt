@@ -16,7 +16,7 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-          //val articlesViewModel : ArticlesViewModel by viewModel()
+          val articlesViewModel : ArticlesViewModel by viewModel()
         setContent {
             MyApplicationTheme {
                 Surface(
@@ -24,10 +24,10 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     //AppScaffold(articlesViewModel = articlesViewModel)
-                    val context = LocalContext.current
-                    val driverFactory = DatabaseDriverFactory(context)
-                    val dbHelper = DatabaseHelper(driverFactory)
-                    val articlesViewModel = ArticlesViewModel(dbHelper)
+                 //   val context = LocalContext.current
+                 //   val driverFactory = DatabaseDriverFactory(context)
+                 //   val dbHelper = DatabaseHelper(driverFactory)
+                 //   val articlesViewModel = ArticlesViewModel(dbHelper)
                     ArticlesScreen({}, articlesViewModel)
                 }
             }
