@@ -1,5 +1,6 @@
 package com.petros.efthymiou.dailypulse.articles
 
+import com.petros.efthymiou.dailypulse.DatabaseHelper
 import com.petros.efthymiou.dailypulse.viewmodel.BaseViewModel
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
@@ -9,7 +10,11 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import kotlinx.serialization.json.Json
 
-class ArticlesViewModel : BaseViewModel() {
+class ArticlesViewModel(private val dbHelper: DatabaseHelper) : BaseViewModel() {
+
+    init {
+       // dbHelper.getAllArticles()
+    }
 
     private val _articlesState: MutableStateFlow<ArticlesState> =
         MutableStateFlow(ArticlesState(loading = true))

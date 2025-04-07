@@ -17,7 +17,10 @@ extension ArticlesScreen {
         
         
         init() {
-            articlesViewModel = ArticlesViewModel()
+            let driverFactory = DatabaseDriverFactory()
+            let dbHelpers = DatabaseHelper(databaseDriverFactory: driverFactory)
+          //  articlesViewModel = ArticlesViewModel()
+            articlesViewModel = ArticlesViewModel(dbHelper: dbHelpers)
             articlesState = articlesViewModel.articlesState.value
         }
         

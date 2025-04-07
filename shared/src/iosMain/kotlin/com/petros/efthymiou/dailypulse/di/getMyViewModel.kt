@@ -1,9 +1,8 @@
 package com.petros.efthymiou.dailypulse.di
 
 import com.petros.efthymiou.dailypulse.articles.ArticlesViewModel
-import org.koin.dsl.module
+import org.koin.mp.KoinPlatform.getKoin
 
-val sharedModule = module {
-    //single { ArticlesViewModel() }
+fun getMyViewModel(): ArticlesViewModel {
+    return getKoin().get()
 }
-

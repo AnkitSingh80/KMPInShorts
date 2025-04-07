@@ -26,7 +26,7 @@ kotlin {
     ).forEach {
         it.binaries.framework {
             baseName = "shared"
-            isStatic = true
+            isStatic = false
         }
     }
 
@@ -55,8 +55,8 @@ kotlin {
 
                 implementation(libs.runtime)
                 implementation(libs.coroutines.extensions)
-                implementation(libs.koin.core) // Or latest
-
+                implementation(libs.koin.core)
+                //implementation(libs.uuid)
             }
         }
 
