@@ -27,7 +27,7 @@ struct AppFullScreenAsyncImageView: View {
         AsyncImage(url: URL(string: url)) { phase in
             switch phase {
             case .empty:
-                Image("tnn_placeholder")
+                Image("tnn_vplaceholder")
                                   .resizable()
                                   .scaledToFit()
             case .success(let image):
@@ -39,10 +39,16 @@ struct AppFullScreenAsyncImageView: View {
             case .failure:
                 Image(systemName: "photo")
             @unknown default:
-                Image("tnn_placeholder", bundle: nil)
+                Image("tnn_vplaceholder", bundle: nil)
             }
         }
+        .onAppear{
+        print(url)
     }
+        
+        
+    }
+       
 }
 
 

@@ -59,14 +59,15 @@ struct ArticlesScreen: View {
                             ForEach(viewModel.articlesState.articles, id: \.self) { article in
                                 if article.tn == "webstory" {
                                     ScrollView(.horizontal, showsIndicators: false){
-                                        LazyHStack(){
+                                        HStack(){
                                             ForEach(article.list, id: \.self){
                                                story in
                                                 WebStoryView(webStory: story)
                                            }
-                                        }.scrollTargetLayout()
+                                        }.frame(height: UIScreen.main.bounds.height)
+                                        .scrollTargetLayout()
                                     }
-                                    .scrollTargetBehavior(.paging)
+                                    .scrollTargetBehavior(.viewAligned)
                                     .ignoresSafeArea(.all)
                                 }
                                   else {
