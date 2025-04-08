@@ -2,6 +2,9 @@ package com.petros.efthymiou.dailypulse.articles
 
 import com.petros.efthymiou.dailypulse.model.ChildrenItem
 import com.petros.efthymiou.dailypulse.model.Response
+import kotlinx.datetime.Instant
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.toLocalDateTime
 
 class ArticlesUseCase(private val service: ArticlesService) {
 
@@ -29,10 +32,21 @@ class ArticlesUseCase(private val service: ArticlesService) {
             WebStory(
                 wu = it?.wu ?: "",
                 imageUrl = it?.imageUrl ?: "",
-                date = "March 29, 2025",
+                date = formatMillisToDate(it?.dl ?:0L),
                 title = it?.hl ?: "",
                 desc = it?.caption ?: ""
             )
         } ?: emptyList()
     }
+
+
+    private fun formatMillisToDate(millis: Long): String {
+        val instant = Instant.fromEpochMilliseconds(millis)
+        val dateTime = instant.toLocalDateTime(TimeZone.currentSystemDefault())
+        val month = dateTime.month.name.take(3).lowercase().replaceFirstChar { it.uppercase() } // e.g. Apr
+        val day = dateTime.dayOfMonth.toString().padStart(2, '0') // e.g. 08
+        val year = dateTime.year
+        return "$month $day, $year"
+    }
+
 }
