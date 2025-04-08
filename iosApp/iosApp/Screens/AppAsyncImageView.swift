@@ -28,8 +28,10 @@ struct AppFullScreenAsyncImageView: View {
             switch phase {
             case .empty:
                 Image("tnn_vplaceholder")
-                                  .resizable()
-                                  .scaledToFit()
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                    .clipped()
             case .success(let image):
                 image
                     .resizable()
