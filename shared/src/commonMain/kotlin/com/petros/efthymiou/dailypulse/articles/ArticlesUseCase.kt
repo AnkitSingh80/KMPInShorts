@@ -28,13 +28,14 @@ class ArticlesUseCase(private val service: ArticlesService) {
         }
 
     private fun mapWebStories(children: List<ChildrenItem?>?): List<WebStory> {
-        return children?.map {
+        return children?.mapIndexed { index, it ->
             WebStory(
                 wu = it?.wu ?: "",
                 imageUrl = it?.imageUrl ?: "",
                 date = formatMillisToDate(it?.dl ?:0L),
                 title = it?.hl ?: "",
-                desc = it?.caption ?: ""
+                desc = it?.caption ?: "",
+                imageNo = index + 1
             )
         } ?: emptyList()
     }

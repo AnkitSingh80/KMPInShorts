@@ -10,6 +10,7 @@ import shared
 
 struct WebStoryView: View {
     let webStory: WebStory
+    let imageCount: Int
     var body: some View {
         let screenWidth = UIScreen.main.bounds.width
         let screenHeight = (9.0 / 16.0) * screenWidth
@@ -20,24 +21,47 @@ struct WebStoryView: View {
         ZStack{
             AppFullScreenAsyncImageView(url:imageUrl)
             VStack() {
-                Text("Text here")
+                Text("\(webStory.imageNo)/\(imageCount)")
                     .frame(maxWidth: .infinity, alignment: .center)
+                    .foregroundColor(.white)
+                    .padding(.top, 50)
                 Spacer()
-                Text(webStory.date)
-                    .font(.headline)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .foregroundStyle(.white)
-                    .padding(.bottom, 4)
-                    .padding(.horizontal, 20)
-                HStack {
-                    Text(webStory.desc)
-                        .font(.title)
-                        .lineLimit(3)
-                        .truncationMode(.tail)
+                if(webStory.imageNo == 1){
+                    Text(webStory.date)
+                        .font(.headline)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .foregroundStyle(.white)
-                        .padding(.bottom, 24)
+                        .padding(.bottom, 4)
                         .padding(.horizontal, 20)
-                
+                    
+                }
+                else {
+                    Text(webStory.title)
+                        .font(.headline)
+                        .font(.system(size : 20))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .foregroundStyle(.white)
+                        .padding(.bottom, 4)
+                        .padding(.horizontal, 20)
+                }
+                HStack {
+                    if(webStory.imageNo == 1){
+                        Text(webStory.title)
+                            .font(.headline)
+                            .font(.system(size : 20))
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .foregroundStyle(.white)
+                            .padding(.bottom, 24)
+                            .padding(.horizontal, 20)
+                    }else {
+                        Text(webStory.desc)
+                            .font(.system(size : 20))
+                            .lineLimit(3)
+                            .truncationMode(.tail)
+                            .foregroundStyle(.white)
+                            .padding(.bottom, 24)
+                            .padding(.horizontal, 20)
+                    }
                     Spacer()
                     Image(systemName: "square.and.arrow.up")
                         .resizable()

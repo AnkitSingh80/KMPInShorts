@@ -58,11 +58,12 @@ struct ArticlesScreen: View {
                         LazyVStack(spacing: 0) {
                             ForEach(viewModel.articlesState.articles, id: \.self) { article in
                                 if article.tn == "webstory" {
+                                    let size = article.list.count
                                     ScrollView(.horizontal, showsIndicators: false){
                                         HStack(){
                                             ForEach(article.list, id: \.self){
                                                story in
-                                                WebStoryView(webStory: story)
+                                                WebStoryView(webStory: story, imageCount: size)
                                            }
                                         }.frame(height: UIScreen.main.bounds.height)
                                         .scrollTargetLayout()

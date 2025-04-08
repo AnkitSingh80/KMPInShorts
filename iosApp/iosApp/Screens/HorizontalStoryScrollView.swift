@@ -16,9 +16,9 @@ struct HorizontalStoryScrollView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 8) {
                 ForEach(article.list, id: \.self) { story in
-                    WebStoryView(webStory: story)
-                        .frame(width: 120, height: 200) // Fixed size for smooth scrolling
-                        .cornerRadius(12)
+                   // WebStoryView(webStory: story)
+                    //    .frame(width: 120, height: 200) // Fixed size for smooth scrolling
+                    //    .cornerRadius(12)
                 }
             }
             .padding(.horizontal)
