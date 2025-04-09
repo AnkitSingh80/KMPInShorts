@@ -19,6 +19,10 @@
 		BCEF8AB22D981493006F4ED6 /* HorizontalStoryScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AB12D981493006F4ED6 /* HorizontalStoryScrollView.swift */; };
 		BCEF8AB42D9814F8006F4ED6 /* WebStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AB32D9814F8006F4ED6 /* WebStoryView.swift */; };
 		BCEF8AD62DA25DC4006F4ED6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEF8AD52DA25DC4006F4ED6 /* libsqlite3.tbd */; };
+		BCEF8AE42DA6BDEC006F4ED6 /* AboutScreen 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AE32DA6BDEC006F4ED6 /* AboutScreen 2.swift */; };
+		BCEF8AE62DA6C098006F4ED6 /* AboutScreen 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AE52DA6C098006F4ED6 /* AboutScreen 2.swift */; };
+		BCEF8AE82DA6C159006F4ED6 /* AppColor 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AE72DA6C159006F4ED6 /* AppColor 2.swift */; };
+		BCEF8AF02DA6CB24006F4ED6 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AEF2DA6CB24006F4ED6 /* Notification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +53,10 @@
 		BCEF8AB12D981493006F4ED6 /* HorizontalStoryScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalStoryScrollView.swift; sourceTree = "<group>"; };
 		BCEF8AB32D9814F8006F4ED6 /* WebStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebStoryView.swift; sourceTree = "<group>"; };
 		BCEF8AD52DA25DC4006F4ED6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		BCEF8AE32DA6BDEC006F4ED6 /* AboutScreen 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AboutScreen 2.swift"; sourceTree = "<group>"; };
+		BCEF8AE52DA6C098006F4ED6 /* AboutScreen 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AboutScreen 2.swift"; sourceTree = "<group>"; };
+		BCEF8AE72DA6C159006F4ED6 /* AppColor 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppColor 2.swift"; sourceTree = "<group>"; };
+		BCEF8AEF2DA6CB24006F4ED6 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,10 @@
 		8E304DF72B14E26C006A6353 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				BCEF8AE52DA6C098006F4ED6 /* AboutScreen 2.swift */,
+				BCEF8AEF2DA6CB24006F4ED6 /* Notification.swift */,
+				BCEF8AE72DA6C159006F4ED6 /* AppColor 2.swift */,
+				BCEF8AE32DA6BDEC006F4ED6 /* AboutScreen 2.swift */,
 				BCEF8AB12D981493006F4ED6 /* HorizontalStoryScrollView.swift */,
 				BCEF8AA72D97D72F006F4ED6 /* ShortsView 2.swift */,
 				BCEF8AB32D9814F8006F4ED6 /* WebStoryView.swift */,
@@ -220,10 +232,14 @@
 				BCEF8AA62D97D6AE006F4ED6 /* AppAsyncImageView.swift in Sources */,
 				8ECF34982B0F683E00AA7F50 /* AboutListView.swift in Sources */,
 				BCEF8AB42D9814F8006F4ED6 /* WebStoryView.swift in Sources */,
+				BCEF8AE82DA6C159006F4ED6 /* AppColor 2.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				BCEF8AF02DA6CB24006F4ED6 /* Notification.swift in Sources */,
 				BCEF8AA82D97D72F006F4ED6 /* ShortsView 2.swift in Sources */,
 				BCEF8AB22D981493006F4ED6 /* HorizontalStoryScrollView.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				BCEF8AE62DA6C098006F4ED6 /* AboutScreen 2.swift in Sources */,
+				BCEF8AE42DA6BDEC006F4ED6 /* AboutScreen 2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
