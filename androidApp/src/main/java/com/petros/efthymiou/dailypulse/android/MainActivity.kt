@@ -6,10 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.*
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
-import com.petros.efthymiou.dailypulse.DatabaseHelper
 import com.petros.efthymiou.dailypulse.articles.ArticlesViewModel
-import com.petros.efthymiou.dailypulse.database.DatabaseDriverFactory
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 

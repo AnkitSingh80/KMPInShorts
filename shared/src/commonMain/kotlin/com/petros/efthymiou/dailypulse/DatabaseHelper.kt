@@ -1,6 +1,7 @@
 package com.petros.efthymiou.dailypulse
 
 import com.petros.efthymiou.dailypulse.database.DatabaseDriverFactory
+import com.petros.efthymiou.dailypulse.database.News
 import com.petros.efthymiou.dailypulse.sqldelight.AppDatabase
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
@@ -15,7 +16,9 @@ class DatabaseHelper(databaseDriverFactory: DatabaseDriverFactory) {
         return dbQuery.selectAll().asFlow().map { it.executeAsList() }
     }
 
-    fun insertArticle(title: String, content: String) {
-        dbQuery.insertArticle(title, content)
+    fun insertArticle(news: News) {
+        news.run {
+            dbQuery.insertArticle(title, wu, image, timeInMills)
+        }
     }
 }

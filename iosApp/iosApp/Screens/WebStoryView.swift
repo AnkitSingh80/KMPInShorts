@@ -20,6 +20,10 @@ struct WebStoryView: View {
             .replacingOccurrences(of: "<height>", with: "\(Int(screenHeight))")
         ZStack{
             AppFullScreenAsyncImageView(url:imageUrl)
+            LinearGradient(gradient: Gradient(colors: [AppColor.GrayColor.opacity(0.5),Color.clear,Color.clear, AppColor.GrayColor.opacity(0.5)]),
+                           startPoint: .top,
+                           endPoint: .bottom)
+                           .edgesIgnoringSafeArea(.all)
             VStack() {
                 Text("\(webStory.imageNo)/\(imageCount)")
                     .frame(maxWidth: .infinity, alignment: .center)
@@ -74,6 +78,8 @@ struct WebStoryView: View {
                 
             }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                 .ignoresSafeArea(.all)
+            
+        
         }
 
     }

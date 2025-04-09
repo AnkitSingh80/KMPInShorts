@@ -1,6 +1,7 @@
 package com.petros.efthymiou.dailypulse.articles
 
 import com.petros.efthymiou.dailypulse.DatabaseHelper
+import com.petros.efthymiou.dailypulse.database.News
 import com.petros.efthymiou.dailypulse.viewmodel.BaseViewModel
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
@@ -39,6 +40,10 @@ class ArticlesViewModel(private val dbHelper: DatabaseHelper) : BaseViewModel() 
         useCase = ArticlesUseCase(service)
 
         getArticles()
+    }
+
+    fun insertNotification(news: News){
+        dbHelper.insertArticle(news)
     }
 
     private fun getArticles() {
