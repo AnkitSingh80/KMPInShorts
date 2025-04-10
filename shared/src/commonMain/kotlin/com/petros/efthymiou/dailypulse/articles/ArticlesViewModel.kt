@@ -3,19 +3,18 @@ package com.petros.efthymiou.dailypulse.articles
 import com.petros.efthymiou.dailypulse.DatabaseHelper
 import com.petros.efthymiou.dailypulse.database.News
 import com.petros.efthymiou.dailypulse.viewmodel.BaseViewModel
+import competrosefthymioudailypulsesqldelight.Notification
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.flow.Flow
 import kotlinx.serialization.json.Json
 
-class ArticlesViewModel(private val dbHelper: DatabaseHelper) : BaseViewModel() {
 
-    init {
-       // dbHelper.getAllArticles()
-    }
+class ArticlesViewModel(private val dbHelper: DatabaseHelper) : BaseViewModel() {
 
     private val _articlesState: MutableStateFlow<ArticlesState> =
         MutableStateFlow(ArticlesState(loading = true))
@@ -42,8 +41,12 @@ class ArticlesViewModel(private val dbHelper: DatabaseHelper) : BaseViewModel() 
         getArticles()
     }
 
-    fun insertNotification(news: News){
+     fun insertNotification(news: News){
         dbHelper.insertArticle(news)
+    }
+
+    fun fetchAllNotification(): Flow<List<Notification>>{
+       return dbHelper.getAllArticles()
     }
 
     private fun getArticles() {

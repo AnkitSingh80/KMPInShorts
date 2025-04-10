@@ -1,5 +1,5 @@
 
-CREATE TABLE article (
+CREATE TABLE Notification (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
 title TEXT NOT NULL,
 wu TEXT NOT NULL,
@@ -8,7 +8,7 @@ milliSeconds INTEGER NOT NULL
 );
 
 selectAll:
-SELECT * FROM article;
+SELECT * FROM Notification;
 
 insertArticle:
-INSERT INTO article (title, wu, imageUrl, milliSeconds) VALUES (?, ?, ?, ?);
+INSERT INTO Notification (title, wu, imageUrl, milliSeconds) VALUES (?, ?, ?, ?);

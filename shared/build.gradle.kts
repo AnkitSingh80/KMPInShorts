@@ -40,7 +40,6 @@ kotlin {
                 implementation(libs.ktor.client.android)
                 implementation(libs.android.driver)
                 implementation(libs.koin.android)
-
             }
         }
 
