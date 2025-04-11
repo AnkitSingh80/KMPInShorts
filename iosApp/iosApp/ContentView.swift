@@ -16,7 +16,7 @@ struct ContentView: View {
                             Label("About", systemImage: "info.circle").labelStyle(.titleAndIcon)
                         }
                         .popover(isPresented: $shouldOpenAbout) {
-                            Notification()
+                            NotificationView(notificationViewModel: .init())
                         }
                     }
                 }

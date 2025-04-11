@@ -27,14 +27,14 @@ extension ArticlesScreen {
                 wu: "some-wu",
                 date: "2025-04-10",
                 image: "https://...",
-                title: "Some Title",
+                title: "Some Title testing here",
                 timeInMills: 1234567890
             )
-            articlesViewModel.insertNotification(news)
+            articlesViewModel.insertNotification(news: news)
         }
         
         @Published var articlesState: ArticlesState
-        
+
         func startObserving() {
             Task {
                 for await articlesS in articlesViewModel.articlesState {
@@ -42,6 +42,7 @@ extension ArticlesScreen {
                 }
             }
         }
+        
     }
 }
 

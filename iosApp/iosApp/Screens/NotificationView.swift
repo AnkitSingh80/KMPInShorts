@@ -8,52 +8,66 @@
 
 import Foundation
 import SwiftUI
+import shared
 
-
-struct NotificationItem : Identifiable {
-    let id = UUID()
-    let image: String
-    let title: String
-    let message: String
-    let time: String
+extension NotificationView{
+    
+    @MainActor
+    class NotificationViewModelWrapper: ObservableObject{
+        @Published var notificationList: [News] = []
+        let articlesViewModel: ArticlesViewModel
+        
+        init(){
+            let driverFactory = DatabaseDriverFactory()
+            let dbHelpers = DatabaseHelper(databaseDriverFactory: driverFactory)
+            articlesViewModel = ArticlesViewModel(dbHelper: dbHelpers)
+        }
+        
+        func loadNotifications() {
+            Task {
+                do {
+                    notificationList = try await articlesViewModel.fetchNotificationIos()
+                } catch {
+                    print("Error loading notifications: \(error)")
+                }
+            }
+        }
+    }
 }
 
-struct Notification : View {
+
+struct NotificationView: View {
     
-    let notifications: [NotificationItem] = [
-            NotificationItem(image: "person.fill", title: "New Message", message: "Hey, check this out!", time: "10m ago"),
-            NotificationItem(image: "bell.fill", title: "Reminder", message: "Don't forget your meeting.", time: "1h ago"),
-            NotificationItem(image: "star.fill", title: "Achievement", message: "You reached level 10!", time: "3h ago")
-        ]
-    
+    @ObservedObject private(set) var notificationViewModel: NotificationViewModelWrapper
+
     var body: some View {
         NavigationView {
-            List(notifications) { notification in
+            List($notificationViewModel.notificationList, id: \.id) { notification in
                 HStack(spacing: 12) {
-                    Image(systemName: notification.image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 40, height: 40)
-                        .clipShape(Circle())
-                        .foregroundColor(.blue)
-                    
                     VStack(alignment: .leading, spacing: 4) {
-                        Text(notification.title)
+                        Text(notification.id)
                             .font(.headline)
-                        Text(notification.message)
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
+//                        Text(notification.message)
+//                            .font(.subheadline)
+//                            .foregroundColor(.gray)
                     }
                     
                     Spacer()
                     
-                    Text(notification.time)
-                        .font(.caption)
-                        .foregroundColor(.gray)
+//                    Text(notification.time)
+//                        .font(.caption)
+//                        .foregroundColor(.gray)
                 }
                 .padding(.vertical, 8)
             }
             .navigationTitle("Notifications")
         }
+        .onAppear {
+            notificationViewModel.loadNotifications()
+        }
     }
+}
+
+extension News: @retroactive Identifiable {
+    public var id: String { title }
 }

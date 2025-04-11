@@ -50,15 +50,26 @@ class ArticlesViewModel(private val dbHelper: DatabaseHelper) : BaseViewModel() 
        return dbHelper.getAllArticles()
     }
 
-    suspend fun fetchNotificationIos(): List<Notification>{
-        return dbHelper.getAllArticles().first()
+    suspend fun fetchNotificationIos(): List<News>{
+        return dbHelper.getAllArticles().first().map{
+            it.toNews()
+        }
     }
 
     private fun getArticles() {
         scope.launch {
             val fetchedArticles = useCase.getArticles()
-
             _articlesState.emit(ArticlesState(articles = fetchedArticles))
         }
+    }
+
+    fun Notification.toNews(): News {
+        return News(
+            wu = "",
+            date = "",
+            image = "",
+            title = title,
+            timeInMills = 0L
+        )
     }
 }

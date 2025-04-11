@@ -1,7 +1,10 @@
 package com.petros.efthymiou.dailypulse.database
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class News(
-    val wu: String,
+    var wu: String,
     val date: String,
     val image: String,
     val title: String,
