@@ -7,6 +7,7 @@ import competrosefthymioudailypulsesqldelight.Notification
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
 import io.ktor.serialization.kotlinx.json.json
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
@@ -47,6 +48,10 @@ class ArticlesViewModel(private val dbHelper: DatabaseHelper) : BaseViewModel() 
 
     fun fetchAllNotification(): Flow<List<Notification>>{
        return dbHelper.getAllArticles()
+    }
+
+    suspend fun fetchNotificationIos(): List<Notification>{
+        return dbHelper.getAllArticles().first()
     }
 
     private fun getArticles() {

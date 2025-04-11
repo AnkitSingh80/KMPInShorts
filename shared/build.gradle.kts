@@ -79,7 +79,6 @@ sqldelight {
     database("AppDatabase") {
         packageName = "com.petros.efthymiou.dailypulse.sqldelight"
         sourceFolders = listOf("sqldelight")
-
     }
 }
 android {

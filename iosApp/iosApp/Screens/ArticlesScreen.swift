@@ -22,6 +22,15 @@ extension ArticlesScreen {
           //  articlesViewModel = ArticlesViewModel()
             articlesViewModel = ArticlesViewModel(dbHelper: dbHelpers)
             articlesState = articlesViewModel.articlesState.value
+            
+            let news = News(
+                wu: "some-wu",
+                date: "2025-04-10",
+                image: "https://...",
+                title: "Some Title",
+                timeInMills: 1234567890
+            )
+            articlesViewModel.insertNotification(news)
         }
         
         @Published var articlesState: ArticlesState
