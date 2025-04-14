@@ -5,6 +5,14 @@ struct ContentView: View {
     
     @State private var shouldOpenAbout = false
     
+    init(shouldOpenAbout: Bool = false) {
+        let appearance = UINavigationBarAppearance()
+            appearance.configureWithTransparentBackground()
+            appearance.backgroundColor = .clear
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+    }
+    
     var body: some View {
         NavigationStack{
             ArticlesScreen(viewModel: .init())
