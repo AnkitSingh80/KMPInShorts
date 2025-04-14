@@ -19,7 +19,7 @@ class DatabaseHelper(databaseDriverFactory: DatabaseDriverFactory) {
 
     fun insertArticle(news: News) {
         news.run {
-            dbQuery.insertArticle(title, wu, image, timeInMills)
+            dbQuery.insertArticle(title, wu, image, date, timeInMills)
         }
     }
 }

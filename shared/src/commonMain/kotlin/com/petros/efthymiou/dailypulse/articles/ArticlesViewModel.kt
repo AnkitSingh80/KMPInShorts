@@ -24,6 +24,8 @@ class ArticlesViewModel(private val dbHelper: DatabaseHelper) : BaseViewModel() 
 
     private val useCase: ArticlesUseCase
 
+    private var currentPage = 1
+
     init {
         val httpClient = HttpClient {
             install(ContentNegotiation) {
@@ -58,16 +60,25 @@ class ArticlesViewModel(private val dbHelper: DatabaseHelper) : BaseViewModel() 
 
     private fun getArticles() {
         scope.launch {
-            val fetchedArticles = useCase.getArticles()
+            val fetchedArticles = useCase.getArticles(currentPage)
             _articlesState.emit(ArticlesState(articles = fetchedArticles))
+        }
+    }
+
+    fun loadNextPageApi(){
+        scope.launch {
+            val fetchedArticles = useCase.getArticles(++currentPage)
+            val currentList = _articlesState.value.articles
+            val combinedList = currentList + fetchedArticles
+            _articlesState.emit(ArticlesState(articles = combinedList))
         }
     }
 
     fun Notification.toNews(): News {
         return News(
-            wu = "",
-            date = "",
-            image = "",
+            wu = wu,
+            date = date,
+            image = image,
             title = title,
             timeInMills = 0L
         )

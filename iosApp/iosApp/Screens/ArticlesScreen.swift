@@ -15,7 +15,7 @@ extension ArticlesScreen {
     class ArticlesViewModelWrapper: ObservableObject {
         let articlesViewModel: ArticlesViewModel
         
-        
+    
         init() {
             let driverFactory = DatabaseDriverFactory()
             let dbHelpers = DatabaseHelper(databaseDriverFactory: driverFactory)
@@ -26,7 +26,7 @@ extension ArticlesScreen {
             let news = News(
                 wu: "some-wu",
                 date: "2025-04-10",
-                image: "https://...",
+                image: "https://static.sociofyme.com/photo/msid-151403580,imgsize-37904,updatedat-1744437990971,width-402,height-226,resizemode-75/151403580.jpg",
                 title: "Some Title testing here",
                 timeInMills: 1234567890
             )
@@ -34,13 +34,28 @@ extension ArticlesScreen {
         }
         
         @Published var articlesState: ArticlesState
+        @Published var isLoading = false
+
 
         func startObserving() {
             Task {
                 for await articlesS in articlesViewModel.articlesState {
                     self.articlesState = articlesS
+                    print("New Articles State Received: \(articlesS)")
+                    print("Article count: \(articlesS.articles.count)")
+                    isLoading = false
                 }
             }
+        }
+        
+        func loadNextPage(){
+            guard !isLoading else {
+                print("API call in progress, ignoring request")
+                return
+            }
+            isLoading = true
+            articlesViewModel.loadNextPageApi()
+            print("lastPageApiCall")
         }
         
     }
@@ -74,9 +89,15 @@ struct ArticlesScreen: View {
                                             ForEach(article.list, id: \.self){
                                                story in
                                                 WebStoryView(webStory: story, imageCount: size)
+                        
                                            }
                                         }.frame(height: UIScreen.main.bounds.height)
                                         .scrollTargetLayout()
+                                    }
+                                    .onAppear(){
+                                        if(article == viewModel.articlesState.articles.last){
+                                            viewModel.loadNextPage()
+                                        }
                                     }
                                     .scrollTargetBehavior(.viewAligned)
                                     .ignoresSafeArea(.all)
@@ -84,6 +105,11 @@ struct ArticlesScreen: View {
                                   else {
                                 ShortsView(article: article)
                                         .frame(height: UIScreen.main.bounds.height)
+                                        .onAppear(){
+                                            if(article == viewModel.articlesState.articles.last){
+                                                viewModel.loadNextPage()
+                                            }
+                                        }
                                 }
                             }
                         }

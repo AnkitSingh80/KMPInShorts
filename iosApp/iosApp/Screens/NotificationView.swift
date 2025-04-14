@@ -39,25 +39,30 @@ extension NotificationView{
 struct NotificationView: View {
     
     @ObservedObject private(set) var notificationViewModel: NotificationViewModelWrapper
+    //@StateObject private var notificationViewModel = NotificationViewModelWrapper()
+
 
     var body: some View {
         NavigationView {
-            List($notificationViewModel.notificationList, id: \.id) { notification in
+            List(notificationViewModel.notificationList) { notification in
                 HStack(spacing: 12) {
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(notification.id)
-                            .font(.headline)
-//                        Text(notification.message)
-//                            .font(.subheadline)
-//                            .foregroundColor(.gray)
-                    }
                     
+                    NotificationImageView(url: notification.image)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(notification.title)
+                            .font(.headline)
+                       
+                    }
                     Spacer()
                     
-//                    Text(notification.time)
-//                        .font(.caption)
-//                        .foregroundColor(.gray)
-                }
+                    Text(notification.date)
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                } .onAppear{
+                     print(notification.image)
+                    print(notification.title)
+
+                    }
                 .padding(.vertical, 8)
             }
             .navigationTitle("Notifications")
@@ -68,6 +73,4 @@ struct NotificationView: View {
     }
 }
 
-extension News: @retroactive Identifiable {
-    public var id: String { title }
-}
+extension News: @retroactive Identifiable {}

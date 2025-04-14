@@ -47,15 +47,48 @@ struct AppFullScreenAsyncImageView: View {
         .onAppear{
         print(url)
     }
-        
-        
     }
-       
+}
+
+import SwiftUI
+
+struct NotificationImageView: View {
+    var url: String
+
+    var body: some View {
+        AsyncImage(url: URL(string: url)) { phase in
+            switch phase {
+            case .empty:
+                ProgressView()
+                    .frame(width: UIScreen.main.bounds.width * 0.3, height: 80)
+                    .background(Color.gray.opacity(0.2))
+
+            case .success(let image):
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+
+            case .failure(_):
+                Image(systemName: "photo")
+                    .resizable()
+                    .scaledToFit()
+                    .foregroundColor(.gray)
+
+            @unknown default:
+                // Default case to handle any unknown states
+                Color.gray
+            }
+        }
+        .onAppear{
+            print(url + "ankit")
+        }
+        .frame(width: UIScreen.main.bounds.width * 0.3, height: 80)
+        .clipShape(RoundedRectangle(cornerRadius: 8))
+    }
 }
 
 
 
-
 #Preview{
-    AppFullScreenAsyncImageView(url: "https://picsum.photos/200/300")
+    NotificationImageView(url: "https://static.sociofyme.com/photo/msid-151403580,imgsize-37904,updatedat-1744437990971,width-402,height-226,resizemode-75/151403580.jpg")
 }

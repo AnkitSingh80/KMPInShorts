@@ -8,8 +8,8 @@ import kotlinx.datetime.toLocalDateTime
 
 class ArticlesUseCase(private val service: ArticlesService) {
 
-    suspend fun getArticles(): List<Article>{
-        val articlesRaw = service.fetchArticles()
+    suspend fun getArticles(currentPage: Int): List<Article>{
+        val articlesRaw = service.fetchArticles(currentPage)
         return mapArticles(articlesRaw)
     }
 

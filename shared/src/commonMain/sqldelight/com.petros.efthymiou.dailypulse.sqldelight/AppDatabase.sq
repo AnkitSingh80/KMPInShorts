@@ -3,7 +3,8 @@ CREATE TABLE Notification (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
 title TEXT NOT NULL,
 wu TEXT NOT NULL,
-imageUrl TEXT NOT NULL,
+image TEXT NOT NULL,
+date TEXT NOT NULL,
 milliSeconds INTEGER NOT NULL
 );
 
@@ -11,4 +12,4 @@ selectAll:
 SELECT * FROM Notification;
 
 insertArticle:
-INSERT INTO Notification (title, wu, imageUrl, milliSeconds) VALUES (?, ?, ?, ?);
+INSERT INTO Notification (title, wu, image, date, milliSeconds) VALUES (?, ?, ?, ?, ?);

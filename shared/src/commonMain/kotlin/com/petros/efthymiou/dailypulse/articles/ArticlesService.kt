@@ -8,9 +8,9 @@ import io.ktor.client.request.*
 
 class ArticlesService(private val httpClient: HttpClient) {
 
-    suspend fun fetchArticles(): Response {
+    suspend fun fetchArticles(pageNo: Int): Response {
         val response: NewsResponse =
-            httpClient.get("https://tnapp.tnn.in/request/getShortListData") {
+            httpClient.get("https://tnapp.tnn.in/request/getShortListData?pageNo=${pageNo}") {
                 headers {
                     append("platform", "android")
                     append("fv", "1")
