@@ -123,6 +123,7 @@ struct ArticlesScreen: View {
         }.onAppear{
             self.viewModel.startObserving()
         }
+
     }
 }
 

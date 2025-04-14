@@ -23,8 +23,8 @@ struct ContentView: View {
                         } label: {
                             Label("About", systemImage: "info.circle").labelStyle(.titleAndIcon)
                         }
-                        .popover(isPresented: $shouldOpenAbout) {
-                            NotificationView(notificationViewModel: .init())
+                        .fullScreenCover(isPresented: $shouldOpenAbout) {
+                            NotificationView(notificationViewModel: .init(), isPresented: $shouldOpenAbout)
                         }
                     }
                 }
