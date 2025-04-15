@@ -15,28 +15,17 @@ extension ArticlesScreen {
     class ArticlesViewModelWrapper: ObservableObject {
         let articlesViewModel: ArticlesViewModel
         
-    
+        @Published var articlesState: ArticlesState
+        @Published var isLoading = false
+        
         init() {
             let driverFactory = DatabaseDriverFactory()
             let dbHelpers = DatabaseHelper(databaseDriverFactory: driverFactory)
-          //  articlesViewModel = ArticlesViewModel()
             articlesViewModel = ArticlesViewModel(dbHelper: dbHelpers)
             articlesState = articlesViewModel.articlesState.value
-            
-            let news = News(
-                wu: "some-wu",
-                date: "2025-04-10",
-                image: "https://static.sociofyme.com/photo/msid-151403580,imgsize-37904,updatedat-1744437990971,width-402,height-226,resizemode-75/151403580.jpg",
-                title: "Some Title testing here",
-                timeInMills: 1234567890
-            )
-            articlesViewModel.insertNotification(news: news)
+            Dummy().saveData(viewModel: articlesViewModel)
         }
         
-        @Published var articlesState: ArticlesState
-        @Published var isLoading = false
-
-
         func startObserving() {
             Task {
                 for await articlesS in articlesViewModel.articlesState {

@@ -75,7 +75,6 @@ struct NotificationImageView: View {
                     .foregroundColor(.gray)
 
             @unknown default:
-                // Default case to handle any unknown states
                 Color.gray
             }
         }

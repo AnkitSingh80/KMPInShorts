@@ -43,7 +43,7 @@ struct NotificationView: View {
     var body: some View {
         NavigationView {
             List(notificationViewModel.notificationList) { notification in
-                HStack(spacing: 12) {
+                HStack(spacing: 8) {
                     NotificationImageView(url: notification.image)
                     VStack(alignment: .leading, spacing: 4) {
                         Text(notification.title)
