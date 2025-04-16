@@ -10,7 +10,7 @@ class ArticlesService(private val httpClient: HttpClient) {
 
     suspend fun fetchArticles(pageNo: Int): Response {
         val response: NewsResponse =
-            httpClient.get("https://tnapp.tnn.in/request/getShortListData?pageNo=${pageNo}") {
+            httpClient.get("https://tnappapis.tnn.in/request/getShortListData?pageNo=${pageNo}") {
                 headers {
                     append("platform", "android")
                     append("fv", "1")

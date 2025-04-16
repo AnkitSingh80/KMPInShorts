@@ -84,7 +84,7 @@ struct WebStoryContainer: View {
             
             VStack {
                 SegmentedStoryProgressBar(count: article.list.count, current: currentIndex, progress: $progress)
-                    .padding(.top, 40)
+                    .padding(.top, 54)
 
                 Spacer()
             }
@@ -115,8 +115,6 @@ struct WebStoryContainer: View {
     func moveToNext() {
         if currentIndex < article.list.count - 1 {
             currentIndex += 1
-        } else {
-            // Handle end of story
-        }
+        } else {}
     }
 }

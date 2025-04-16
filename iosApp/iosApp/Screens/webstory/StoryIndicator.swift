@@ -56,7 +56,7 @@ struct SegmentedStoryProgressBar: View {
                 GeometryReader { geo in
                     ZStack(alignment: .leading) {
                         Capsule()
-                            .foregroundColor(.gray.opacity(0.4))
+                            .foregroundColor(.white.opacity(0.4))
 
                         if index < current {
                             Capsule()

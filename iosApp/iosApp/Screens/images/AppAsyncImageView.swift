@@ -50,8 +50,6 @@ struct AppFullScreenAsyncImageView: View {
     }
 }
 
-import SwiftUI
-
 struct NotificationImageView: View {
     var url: String
 

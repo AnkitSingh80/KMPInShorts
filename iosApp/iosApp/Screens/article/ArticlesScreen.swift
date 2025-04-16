@@ -24,6 +24,11 @@ struct ArticlesScreen: View {
                             ForEach(viewModel.articlesState.articles, id: \.self) { article in
                                 if article.tn == "webstory" {
                                     WebStoryContainer(article: article, size: size)
+                                        .onAppear(){
+                                            if(article == viewModel.articlesState.articles.last){
+                                                viewModel.loadNextPage()
+                                            }
+                                        }
                                 }
                                   else {
                                 ShortsView(article: article)
