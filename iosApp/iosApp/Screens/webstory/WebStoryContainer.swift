@@ -10,55 +10,6 @@ import Foundation
 import SwiftUI
 import shared
 
-
-//
-//struct WebStoryContainer: View {
-//    
-//    let viewModel: ArticlesViewModelWrapper
-//    let article: Article
-//    let size: Int
-//    
-//    @State private var currentIndex: Int = 0
-//    private let timer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
-//
-//    var body: some View {
-//        ZStack(alignment: .top) {
-//            ScrollView(.horizontal, showsIndicators: false) {
-//                HStack(spacing: 0) {
-//                    ForEach(Array(article.list.enumerated()), id: \.element) { index, story in
-//                        WebStoryView(webStory: story, imageCount: size)
-//                            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-//                            .background(
-//                                GeometryReader { geo in
-//                                    Color.clear
-//                                        .onAppear {
-//                                            let offsetX = geo.frame(in: .global).minX
-//                                            let screenWidth = UIScreen.main.bounds.width
-//                                            let i = Int(round(offsetX / screenWidth))
-//                                            if i >= 0 && i < article.list.count {
-//                                                currentIndex = i
-//                                            }
-//                                        }
-//                                }
-//                            )
-//                    }
-//                }
-//            }
-//            .scrollTargetBehavior(.viewAligned)
-//            .ignoresSafeArea(.all)
-//
-//            // WhatsApp-style story indicator
-//            StoryProgressIndicator(total: article.list.count, current: currentIndex)
-//        }
-//        .onAppear {
-//            if article == viewModel.articlesState.articles.last {
-//                viewModel.loadNextPage()
-//            }
-//        }
-//    }
-//}
-
-
 struct WebStoryContainer: View {
     let article: Article
     let size: Int
@@ -88,6 +39,30 @@ struct WebStoryContainer: View {
 
                 Spacer()
             }
+            
+            HStack(spacing: 0) {
+                Rectangle()
+                    .fill(Color.black.opacity(0))
+                    .frame(width: UIScreen.main.bounds.width / 2)
+                    .contentShape(Rectangle())
+                    .onTapGesture{
+                        moveToPrev()
+                    }
+                
+                Rectangle()
+                    .fill(Color.black.opacity(0))
+                    .frame(width: UIScreen.main.bounds.width / 2)
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        moveToNext()
+                    }
+            }
+            .allowsHitTesting(true)
+            
+            Text("\(currentIndex + 1)/\(article.list.count)")
+                .frame(maxWidth: .infinity, alignment: .center)
+                .foregroundColor(.white)
+                .padding(.top, 60)
         }
         .onAppear {
             startTimer()
@@ -115,6 +90,12 @@ struct WebStoryContainer: View {
     func moveToNext() {
         if currentIndex < article.list.count - 1 {
             currentIndex += 1
+        } else {}
+    }
+    
+    func moveToPrev() {
+        if currentIndex > 0 {
+            currentIndex -= 1
         } else {}
     }
 }

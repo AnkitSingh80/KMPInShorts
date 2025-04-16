@@ -25,10 +25,6 @@ struct WebStoryView: View {
                            endPoint: .bottom)
                            .edgesIgnoringSafeArea(.all)
             VStack() {
-                Text("\(webStory.imageNo)/\(imageCount)")
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    .foregroundColor(.white)
-                    .padding(.top, 50)
                 Spacer()
                 if(webStory.imageNo == 1){
                     Text(webStory.date)
