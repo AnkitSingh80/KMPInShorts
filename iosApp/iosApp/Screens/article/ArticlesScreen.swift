@@ -1,10 +1,16 @@
 
 import SwiftUI
+import shared
 
+@MainActor
 struct ArticlesScreen: View {
     
     @ObservedObject private(set) var viewModel: ArticlesViewModelWrapper
     
+    @State private var scrollTarget: Int? = nil
+    @State private var hasReachedEnd = false
+    @State var currentIndex: Int = 0
+
     var body: some View {
         VStack {
             
@@ -19,39 +25,53 @@ struct ArticlesScreen: View {
             if(!viewModel.articlesState.articles.isEmpty) {
                 let size = viewModel.articlesState.articles.count
                 NavigationView {
-                    ScrollView(.vertical, showsIndicators: false) {
-                        LazyVStack(spacing: 0) {
-                            ForEach(viewModel.articlesState.articles, id: \.self) { article in
-                                if article.tn == "webstory" {
-                                    WebStoryContainer(article: article, size: size)
-                                        .onAppear(){
-                                            if(article == viewModel.articlesState.articles.last){
-                                                viewModel.loadNextPage()
+                    ScrollViewReader { proxy in
+                        ScrollView(.vertical, showsIndicators: false) {
+                            LazyVStack(spacing: 0) {
+                                ForEach(Array(viewModel.articlesState.articles.enumerated()), id: \.element) { index, article in
+                                    if article.tn == "webstory" {
+                                        WebStoryContainer(hasReachedEnd: $hasReachedEnd, article: article, size: size)
+                                            .id(article.title)
+                                            .onAppear(){
+                                                currentIndex = index
+                                                if(article == viewModel.articlesState.articles.last){
+                                                    viewModel.loadNextPage()
+                                                }
                                             }
-                                        }
-                                }
-                                  else {
-                                ShortsView(article: article)
-                                        .frame(height: UIScreen.main.bounds.height)
-                                        .onAppear(){
-                                            if(article == viewModel.articlesState.articles.last){
-                                                viewModel.loadNextPage()
-                                            }
-                                        }
+                                    } else {
+                                        ShortsView(article: article)
+                                            .frame(height: UIScreen.main.bounds.height)
+                                            .id(article.title)
+                                            .onAppear(){
+                                                currentIndex = index
+                                                if(article == viewModel.articlesState.articles.last){
+                                                    viewModel.loadNextPage()
+                                                }
+                                           }
+                                    }
                                 }
                             }
+                            .scrollTargetLayout()
                         }
-                        .scrollTargetLayout()
+                        .ignoresSafeArea(.all)
+                        .scrollTargetBehavior(.paging)
+                        .onChange(of: hasReachedEnd) {
+                            let currentIndex = currentIndex
+                            let nextIndex = currentIndex + 1
+                            
+                            withAnimation {
+                                proxy.scrollTo(viewModel.articlesState.articles[nextIndex].title, anchor: .top)
+                            }
+                            hasReachedEnd = false
+                        }
                     }
-                    .ignoresSafeArea(.all)
-                    .scrollTargetBehavior(.paging)
                 }
             }
             
         }.onAppear{
             self.viewModel.startObserving()
         }
-
+        
     }
 }
 

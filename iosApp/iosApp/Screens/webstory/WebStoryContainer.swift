@@ -11,6 +11,7 @@ import SwiftUI
 import shared
 
 struct WebStoryContainer: View {
+    @Binding var hasReachedEnd: Bool
     let article: Article
     let size: Int
 
@@ -90,7 +91,9 @@ struct WebStoryContainer: View {
     func moveToNext() {
         if currentIndex < article.list.count - 1 {
             currentIndex += 1
-        } else {}
+        } else {
+            hasReachedEnd = true
+        }
     }
     
     func moveToPrev() {
