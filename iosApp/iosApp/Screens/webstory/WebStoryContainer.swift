@@ -82,8 +82,12 @@ struct WebStoryContainer: View {
             if progress >= 1 {
                 timer?.invalidate()
                 moveToNext()
+                if(article.list.count == currentIndex+1){
+                        hasReachedEnd = true
+                }
             } else {
                 progress += 0.05 / storyDuration
+
             }
         }
     }
@@ -91,9 +95,7 @@ struct WebStoryContainer: View {
     func moveToNext() {
         if currentIndex < article.list.count - 1 {
             currentIndex += 1
-        } else {
-            hasReachedEnd = true
-        }
+        } else {}
     }
     
     func moveToPrev() {
