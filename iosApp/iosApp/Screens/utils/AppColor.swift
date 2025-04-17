@@ -12,6 +12,7 @@ import SwiftUICore
 
 class AppColor {
     
-    static var GrayColor: Color = Color(red: 128 / 255, green: 128 / 255, blue: 128 / 255)
+    static var grayColor: Color = Color(red: 128 / 255, green: 128 / 255, blue: 128 / 255)
+    static var gradient: Color = grayColor.opacity(0.5)
 
 }

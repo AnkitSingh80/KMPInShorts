@@ -31,7 +31,7 @@ struct ArticlesScreen: View {
                                 ForEach(Array(viewModel.articlesState.articles.enumerated()), id: \.element) { index, article in
                                     if article.tn == "webstory" {
                                         WebStoryContainer(hasReachedEnd: $hasReachedEnd, article: article, size: size)
-                                            .id(article.title)
+                                            .id(index)
                                             .onAppear(){
                                                 currentIndex = index
                                                 if(article == viewModel.articlesState.articles.last){
@@ -41,7 +41,7 @@ struct ArticlesScreen: View {
                                     } else {
                                         ShortsView(article: article)
                                             .frame(height: UIScreen.main.bounds.height)
-                                            .id(article.title)
+                                            .id(index)
                                             .onAppear(){
                                                 currentIndex = index
                                                 if(article == viewModel.articlesState.articles.last){
@@ -56,11 +56,8 @@ struct ArticlesScreen: View {
                         .ignoresSafeArea(.all)
                         .scrollTargetBehavior(.paging)
                         .onChange(of: hasReachedEnd) {
-                            let currentIndex = currentIndex
-                            let nextIndex = currentIndex + 1
-                            
                             withAnimation {
-                                proxy.scrollTo(viewModel.articlesState.articles[nextIndex].title, anchor: .top)
+                                proxy.scrollTo(currentIndex + 1, anchor: .top)
                             }
                             hasReachedEnd = false
                         }

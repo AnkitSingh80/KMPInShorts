@@ -12,11 +12,9 @@ struct ShortsView: View {
     let article: Article
     var body: some View {
         let screenWidth = UIScreen.main.bounds.width
-              let screenHeight = (9.0 / 16.0) * screenWidth
+        let screenHeight = (9.0 / 16.0) * screenWidth
 
-              let imageUrl = article.imageUrl
-                  .replacingOccurrences(of: "<width>", with: "\(Int(screenWidth))")
-                  .replacingOccurrences(of: "<height>", with: "\(Int(screenHeight))")
+        let imageUrl = article.imageUrl.getImageURL()
         VStack {
             AppAsyncImageView(url:imageUrl)
             Text(article.title)

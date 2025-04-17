@@ -12,6 +12,7 @@
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 		8E304DF92B14E290006A6353 /* ArticlesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E304DF82B14E290006A6353 /* ArticlesScreen.swift */; };
+		BC13C03E2DB0D92200FCFBCF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13C03D2DB0D92200FCFBCF /* StringExtension.swift */; };
 		BCEF8AA62D97D6AE006F4ED6 /* AppAsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AA12D97D6AE006F4ED6 /* AppAsyncImageView.swift */; };
 		BCEF8AB22D981493006F4ED6 /* HorizontalStoryScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AB12D981493006F4ED6 /* HorizontalStoryScrollView.swift */; };
 		BCEF8AB42D9814F8006F4ED6 /* WebStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8AB32D9814F8006F4ED6 /* WebStoryView.swift */; };
@@ -48,6 +49,7 @@
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E304DF82B14E290006A6353 /* ArticlesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesScreen.swift; sourceTree = "<group>"; };
+		BC13C03D2DB0D92200FCFBCF /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		BCEF8AA12D97D6AE006F4ED6 /* AppAsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAsyncImageView.swift; sourceTree = "<group>"; };
 		BCEF8AB12D981493006F4ED6 /* HorizontalStoryScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalStoryScrollView.swift; sourceTree = "<group>"; };
 		BCEF8AB32D9814F8006F4ED6 /* WebStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebStoryView.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			children = (
 				BCEF8AFB2DA79980006F4ED6 /* AppColor.swift */,
 				BCEF8B072DAD86B9006F4ED6 /* Dummy.swift */,
+				BC13C03D2DB0D92200FCFBCF /* StringExtension.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			files = (
 				8E304DF92B14E290006A6353 /* ArticlesScreen.swift in Sources */,
 				BCEF8B132DAE3B1C006F4ED6 /* StoryIndicator.swift in Sources */,
+				BC13C03E2DB0D92200FCFBCF /* StringExtension.swift in Sources */,
 				BCEF8B152DAE4315006F4ED6 /* WebStoryContainer.swift in Sources */,
 				BCEF8AF82DA79954006F4ED6 /* ShortsView.swift in Sources */,
 				BCEF8B102DAE32E0006F4ED6 /* NotificationViewModel.swift in Sources */,

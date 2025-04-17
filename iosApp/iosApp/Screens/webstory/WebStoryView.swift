@@ -12,15 +12,10 @@ struct WebStoryView: View {
     let webStory: WebStory
     let imageCount: Int
     var body: some View {
-        let screenWidth = UIScreen.main.bounds.width
-        let screenHeight = (9.0 / 16.0) * screenWidth
-        
-        let imageUrl = webStory.imageUrl
-            .replacingOccurrences(of: "<width>", with: "\(Int(screenWidth))")
-            .replacingOccurrences(of: "<height>", with: "\(Int(screenHeight))")
+        let imageUrl =  webStory.imageUrl.getImageURL()
         ZStack{
             AppFullScreenAsyncImageView(url:imageUrl)
-            LinearGradient(gradient: Gradient(colors: [AppColor.GrayColor.opacity(0.5),Color.clear,Color.clear, AppColor.GrayColor.opacity(0.5)]),
+            LinearGradient(gradient: Gradient(colors: [AppColor.gradient,Color.clear,Color.clear, AppColor.gradient]),
                            startPoint: .top,
                            endPoint: .bottom)
                            .edgesIgnoringSafeArea(.all)
@@ -75,14 +70,8 @@ struct WebStoryView: View {
             }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                 .ignoresSafeArea(.all)
             
-        
         }
 
     }
-}
-
-
-#Preview {
-   // ShortsView()
 }
 
