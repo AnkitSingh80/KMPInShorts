@@ -23,7 +23,7 @@ class ArticlesUseCase(private val service: ArticlesService) {
                 date = raw.upd ?:"",
                 list = mapWebStories(raw.children),
                 imageUrl = raw.imageUrl
-                    ?: "https://image.cnbcfm.com/api/v1/image/107326078-1698758530118-gettyimages-1765623456-wall26362_igj6ehhp.jpeg?v=1698758587&w=1920&h=1080"
+                    ?: ""
             )
         }
 
