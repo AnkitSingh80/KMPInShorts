@@ -18,6 +18,7 @@ import androidx.compose.foundation.pager.VerticalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material.icons.outlined.Notifications
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -52,7 +53,7 @@ fun ArticlesScreen(
     val screenWidth = Resources.getSystem().displayMetrics.widthPixels
     val screenHeight = (9.0 / 16.0 * screenWidth).toInt()
     Column(modifier = Modifier.fillMaxSize()) {
-        AppBar(onAboutButtonClick)
+        //AppBar(onAboutButtonClick)
         if (articlesState.value.loading)
             //Loader()
         if (articlesState.value.error != null)
@@ -63,10 +64,18 @@ fun ArticlesScreen(
                 modifier = Modifier.fillMaxSize()
             ) { page ->
                 val article = articles[page]
-                if (article.tn == "webstory") {
-                    HorizontalPagerContent(article.list, screenWidth)
-                } else {
-                    ArticleItemView(article, screenWidth, screenHeight)
+                Box {
+                    if (article.tn == "webstory") {
+                        HorizontalPagerContent(article.list, screenWidth)
+                    } else {
+                        ArticleItemView(article, screenWidth, screenHeight)
+                    }
+                    IconButton(onClick = onAboutButtonClick) {
+                        Icon(
+                            imageVector = Icons.Outlined.Notifications,
+                            contentDescription = "notification",
+                        )
+                    }
                 }
             }
         }
@@ -76,16 +85,13 @@ fun ArticlesScreen(
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun HorizontalPagerContent(article: List<WebStory>, screenWidth: Int) {
-    val horizontalPagerState = rememberPagerState(pageCount = { 5 }) // 5 horizontal pages
+    val horizontalPagerState = rememberPagerState(pageCount = { article.size }) // 5 horizontal pages
     val height = Resources.getSystem().displayMetrics.heightPixels
 
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center
     ) {
-        //Text(text = "Vertical Page: ${pageIndex + 1}", style = MaterialTheme.typography.titleLarge)
-       // Spacer(modifier = Modifier.height(16.dp))
-
         HorizontalPager(state = horizontalPagerState) { page ->
             Box(
                 modifier = Modifier

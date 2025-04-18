@@ -24,7 +24,9 @@ fun TnnShortsNavHost(navController: NavHostController,
             }, viewModel)
         }
         composable(notification) {
-            NotificationScreen(viewModel)
+            NotificationScreen(viewModel, {
+                navController.navigateUp()
+            })
         }
     }
 }
