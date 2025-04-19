@@ -15,14 +15,14 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.serialization.json.Json
 
 
-class ArticlesViewModel(
-    private val useCase: ArticlesUseCase,
-    private val dbHelper: DatabaseHelper) : BaseViewModel() {
+class ArticlesViewModel(private val dbHelper: DatabaseHelper) : BaseViewModel() {
 
     private val _articlesState: MutableStateFlow<ArticlesState> =
         MutableStateFlow(ArticlesState(loading = true))
 
     val articlesState: StateFlow<ArticlesState> get() = _articlesState
+
+    private val useCase: ArticlesUseCase
 
     private var currentPage = 1
 
@@ -36,6 +36,12 @@ class ArticlesViewModel(
                 })
             }
         }
+
+
+        val service = ArticlesService(httpClient)
+
+        useCase = ArticlesUseCase(service)
+
 
         getArticles()
     }

@@ -9,5 +9,5 @@ import org.koin.dsl.module
 val androidModule = module {
     single { ArticlesUseCase(get()) }
     single { DatabaseDriverFactory(get()) }
-    viewModel { ArticlesViewModel(get(),get()) }
+    viewModel { ArticlesViewModel(get()) }
 }

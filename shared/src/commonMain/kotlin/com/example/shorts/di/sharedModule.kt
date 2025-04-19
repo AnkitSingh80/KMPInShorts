@@ -24,6 +24,6 @@ val sharedModule = module {
     }
     single { ArticlesService(get()) }
     single { DatabaseHelper(get()) }
-    single { ArticlesViewModel(get(), get()) }
+    single { ArticlesViewModel(get()) }
 }
 
