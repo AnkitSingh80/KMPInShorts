@@ -83,6 +83,6 @@ struct WebStoryView: View {
 
 
 #Preview {
-   // ShortsView()
+    WebStoryView(webStory: ArticlesViewModelWrapper().getDummy()[0], imageCount: 1 )
 }
 

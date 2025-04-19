@@ -75,6 +75,12 @@ struct ArticlesScreen: View {
     }
 }
 
+struct ArticlesScreen_Previews: PreviewProvider {
+    static var previews: some View {
+        ArticlesScreen(viewModel: .init())
+    }
+}
+
 struct Loader: View {
     var body: some View {
         ProgressView()

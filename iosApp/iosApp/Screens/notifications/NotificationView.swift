@@ -6,6 +6,7 @@ struct NotificationView: View {
     
     @ObservedObject private(set) var notificationViewModel: NotificationViewModel
     @Binding var isPresented: Bool
+    
     var body: some View {
         NavigationView {
             List(notificationViewModel.notificationList) { notification in

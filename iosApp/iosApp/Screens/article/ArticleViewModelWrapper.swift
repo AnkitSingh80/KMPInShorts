@@ -45,4 +45,7 @@ class ArticlesViewModelWrapper: ObservableObject {
         print("lastPageApiCall")
     }
     
+    func getDummy() -> [WebStory] {
+        return articlesViewModel.getDummyWeb()
+    }
 }
