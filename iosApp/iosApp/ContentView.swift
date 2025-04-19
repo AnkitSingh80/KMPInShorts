@@ -21,7 +21,7 @@ struct ContentView: View {
                         Button {
                             shouldOpenAbout = true
                         } label: {
-                            Label("About", systemImage: "info.circle").labelStyle(.titleAndIcon)
+                            Label("About", systemImage: "bell").labelStyle(.titleAndIcon)
                         }
                         .fullScreenCover(isPresented: $shouldOpenAbout) {
                             NotificationView(notificationViewModel: .init(), isPresented: $shouldOpenAbout)
