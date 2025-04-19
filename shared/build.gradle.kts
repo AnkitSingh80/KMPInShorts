@@ -77,12 +77,12 @@ kotlin {
 
 sqldelight {
     database("AppDatabase") {
-        packageName = "com.petros.efthymiou.dailypulse.sqldelight"
+        packageName = "com.example.shorts.sqldelight"
         sourceFolders = listOf("sqldelight")
     }
 }
 android {
-    namespace = "com.petros.efthymiou.dailypulse"
+    namespace = "com.example.shorts"
     compileSdk = 34
     defaultConfig {
         minSdk = 24

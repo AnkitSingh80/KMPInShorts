@@ -6,10 +6,10 @@ plugins {
 }
 
 android {
-    namespace = "com.petros.efthymiou.dailypulse.android"
+    namespace = "com.example.shorts.android"
     compileSdk = 34
     defaultConfig {
-        applicationId = "com.petros.efthymiou.dailypulse.android"
+        applicationId = "com.example.shorts.android"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
