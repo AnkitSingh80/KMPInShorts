@@ -1,6 +1,6 @@
 package com.example.shorts.database
 
-import com.petros.efthymiou.dailypulse.sqldelight.AppDatabase
+import com.example.shorts.sqldelight.AppDatabase
 import com.squareup.sqldelight.db.SqlDriver
 import com.squareup.sqldelight.drivers.native.NativeSqliteDriver
 
