@@ -16,42 +16,23 @@ struct ShortsView: View {
     @State private var offset: CGSize = .zero
     
     var body: some View {
-        let screenWidth = UIScreen.main.bounds.width
-              let screenHeight = (9.0 / 16.0) * screenWidth
-
-              let imageUrl = article.imageUrl
-                  .replacingOccurrences(of: "<width>", with: "\(Int(screenWidth))")
-                  .replacingOccurrences(of: "<height>", with: "\(Int(screenHeight))")
+        let imageUrl = article.imageUrl.getImageURL()
         VStack {
             AppAsyncImageView(url:imageUrl)
             Text(article.title)
-                .padding(.top, 10)
-                .font(.system(size: 18))
-                .lineSpacing(CGFloat(4))
-                .foregroundStyle(.black)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 10)
-            
+                .articleTextStyle(fontSize: 18, color: .black)
+        
             Text(article.date)
-                .padding(.top, 10)
-                .font(.system(size: 12))
-                .lineSpacing(CGFloat(4))
-                .foregroundStyle(.gray)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 10)
-            
-            
+                .articleTextStyle(fontSize: 12, color: .gray)
+           
             Text(article.desc)
-                .padding(.top, 10)
-                .lineLimit(10)
-                .truncationMode(.tail)
-                .font(.system(size: 16))
-                .lineSpacing(CGFloat(4))
-                .foregroundStyle(.black)
-                .opacity(0.8)
-                .lineSpacing(CGFloat(6))
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 10)
+                .articleTextStyle(
+                    fontSize: 16,
+                    color: .black,
+                    opacity: 0.8,
+                    lineLimit: 10,
+                    lineSpacing: 6
+                )
             Spacer()
             Text("Swipe left to read full story")
                 .frame(maxWidth: .infinity, maxHeight: 70, alignment: .center)
@@ -89,5 +70,5 @@ struct ShortsView: View {
 
 
 #Preview {
-   // ShortsView()
+    // ShortsView()
 }

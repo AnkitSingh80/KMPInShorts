@@ -28,8 +28,6 @@ class ArticlesViewModelWrapper: ObservableObject {
         Task {
             for await articlesS in articlesViewModel.articlesState {
                 self.articlesState = articlesS
-                print("New Articles State Received: \(articlesS)")
-                print("Article count: \(articlesS.articles.count)")
                 isLoading = false
             }
         }
@@ -42,7 +40,6 @@ class ArticlesViewModelWrapper: ObservableObject {
         }
         isLoading = true
         articlesViewModel.loadNextPageApi()
-        print("lastPageApiCall")
     }
     
     func getDummy() -> [WebStory] {
