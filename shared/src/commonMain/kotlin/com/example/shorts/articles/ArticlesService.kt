@@ -9,7 +9,7 @@ import io.ktor.client.request.*
 class ArticlesService(private val httpClient: HttpClient) {
 
     suspend fun fetchArticles(pageNo: Int): Response {
-        var url = ""
+        var url = "https://api.npoint.io/3bd9a7e496171990dde2"
         when (pageNo) {
             1 -> {
                 url = "https://api.npoint.io/3bd9a7e496171990dde2"

@@ -58,14 +58,14 @@ struct WebStoryView: View {
                 
             }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                 .ignoresSafeArea(.all)
-            
+
         }
     }
 }
 
 
 private func shareContent(url : String) {
-    
+
         guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
               let window = windowScene.windows.first else {
             return
