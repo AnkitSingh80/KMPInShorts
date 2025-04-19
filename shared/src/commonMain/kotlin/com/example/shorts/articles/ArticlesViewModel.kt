@@ -44,9 +44,22 @@ class ArticlesViewModel(private val dbHelper: DatabaseHelper) : BaseViewModel() 
 
 
         getArticles()
+
+        insertDataForNotification()
     }
 
-     fun insertNotification(news: News){
+    private fun insertDataForNotification() {
+        val news = News(
+            wu = "some-wu",
+            date = "2025-04-10",
+            image = "https://static.sociofyme.com/photo/msid-151403580,imgsize-37904,updatedat-1744437990971,width-402,height-226,resizemode-75/151403580.jpg",
+            title = "Fetched the title using SQLDelight’s offline storage.",
+            timeInMills = 1234567890
+        )
+        dbHelper.insertArticle(news)
+    }
+
+    fun insertNotification(news: News){
         dbHelper.insertArticle(news)
     }
 

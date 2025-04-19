@@ -21,7 +21,6 @@ class ArticlesViewModelWrapper: ObservableObject {
         let dbHelpers = DatabaseHelper(databaseDriverFactory: driverFactory)
         articlesViewModel = ArticlesViewModel(dbHelper: dbHelpers)
         articlesState = articlesViewModel.articlesState.value
-        Dummy().saveData(viewModel: articlesViewModel)
     }
     
     func startObserving() {

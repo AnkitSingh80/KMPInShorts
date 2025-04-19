@@ -23,7 +23,6 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     val viewModel: ArticlesViewModel = koinViewModel()
-                    DummyData().insertData(viewModel)
                     TnnShortsNavHost(navController, viewModel)
                 }
             }
