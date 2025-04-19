@@ -8,9 +8,7 @@ import androidx.compose.material3.*
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import com.petros.efthymiou.dailypulse.articles.ArticlesViewModel
-import com.petros.efthymiou.dailypulse.database.News
 import org.koin.androidx.compose.koinViewModel
-import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class MainActivity : ComponentActivity() {
@@ -24,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     val viewModel: ArticlesViewModel = koinViewModel()
-                    viewModel.insertNotification(News("","","","Notication Test testset",0L))
+                    DummyData().insertData(viewModel)
                     TnnShortsNavHost(navController, viewModel)
                 }
             }

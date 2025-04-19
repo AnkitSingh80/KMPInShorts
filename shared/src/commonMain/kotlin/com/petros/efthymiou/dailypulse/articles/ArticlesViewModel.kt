@@ -66,11 +66,13 @@ class ArticlesViewModel(private val dbHelper: DatabaseHelper) : BaseViewModel() 
     }
 
     fun loadNextPageApi(){
-        scope.launch {
-            val fetchedArticles = useCase.getArticles(++currentPage)
-            val currentList = _articlesState.value.articles
-            val combinedList = currentList + fetchedArticles
-            _articlesState.emit(ArticlesState(articles = combinedList))
+        if(currentPage < 4) {
+            scope.launch {
+                val fetchedArticles = useCase.getArticles(++currentPage)
+                val currentList = _articlesState.value.articles
+                val combinedList = currentList + fetchedArticles
+                _articlesState.emit(ArticlesState(articles = combinedList))
+            }
         }
     }
 
