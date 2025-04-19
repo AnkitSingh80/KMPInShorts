@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -67,6 +67,10 @@
 		BCEF8B142DAE4315006F4ED6 /* WebStoryContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebStoryContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A55C2FFA2DB11D0500AA330C /* detail */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = detail; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		7555FF78242A565900829871 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -129,6 +133,7 @@
 		8E304DF72B14E26C006A6353 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				A55C2FFA2DB11D0500AA330C /* detail */,
 				BCEF8B112DAE3669006F4ED6 /* utils */,
 				BCEF8B0E2DAE3286006F4ED6 /* notifications */,
 				BCEF8B0C2DAE323A006F4ED6 /* webstory */,
@@ -203,6 +208,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A55C2FFA2DB11D0500AA330C /* detail */,
 			);
 			name = iosApp;
 			productName = iosApp;

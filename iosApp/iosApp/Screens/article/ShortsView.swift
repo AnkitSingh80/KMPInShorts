@@ -10,6 +10,11 @@ import shared
 
 struct ShortsView: View {
     let article: Article
+    
+    @State private var showDetail = false
+    
+    @State private var offset: CGSize = .zero
+    
     var body: some View {
         let imageUrl = article.imageUrl.getImageURL()
         VStack {
@@ -34,7 +39,32 @@ struct ShortsView: View {
                 .padding(.bottom, 10)
                 .background(Color.gray.opacity(0.1))
         }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-            .ignoresSafeArea(.all)
+         .ignoresSafeArea(.all)
+         .gesture(
+                    DragGesture()
+                        .onChanged { gesture in
+                            offset = gesture.translation
+                        }
+                        .onEnded { gesture in
+                            if gesture.translation.width < -100 {
+                                // Right swipe detected
+                                print("Right swipe completed!")
+                                withAnimation{
+                                    showDetail=true
+                                }
+                               
+                                                            
+                                // Perform your action here
+                            }
+                            offset = .zero
+                        }
+         ).navigationDestination(isPresented: $showDetail, destination: {
+             let url = URL(string: article.wu)!
+             SafariView(url: url)
+                 .edgesIgnoringSafeArea(.all)
+         })
+                .offset(x: offset.width, y: 0)
+                .animation(.spring(), value: offset)
     }
 }
 

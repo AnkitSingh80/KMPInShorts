@@ -75,4 +75,7 @@ private func shareContent(url : String) {
         window.rootViewController?.present(activityVC, animated: true)
     }
 
+#Preview {
+    WebStoryView(webStory: ArticlesViewModelWrapper().getDummy()[0], imageCount: 1 )
+}
 

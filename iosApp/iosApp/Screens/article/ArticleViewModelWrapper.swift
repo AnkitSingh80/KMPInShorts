@@ -42,4 +42,7 @@ class ArticlesViewModelWrapper: ObservableObject {
         articlesViewModel.loadNextPageApi()
     }
     
+    func getDummy() -> [WebStory] {
+        return articlesViewModel.getDummyWeb()
+    }
 }

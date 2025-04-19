@@ -85,4 +85,8 @@ class ArticlesViewModel(private val dbHelper: DatabaseHelper) : BaseViewModel() 
             timeInMills = 0L
         )
     }
+
+    fun getDummyWeb(): List<WebStory> {
+        return useCase.dummyWebStories()
+    }
 }

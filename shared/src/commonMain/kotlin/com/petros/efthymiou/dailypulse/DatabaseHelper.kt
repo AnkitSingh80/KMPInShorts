@@ -1,6 +1,5 @@
 package com.petros.efthymiou.dailypulse
 
-import com.petros.efthymiou.dailypulse.articles.Article
 import com.petros.efthymiou.dailypulse.database.DatabaseDriverFactory
 import com.petros.efthymiou.dailypulse.database.News
 import com.petros.efthymiou.dailypulse.sqldelight.AppDatabase

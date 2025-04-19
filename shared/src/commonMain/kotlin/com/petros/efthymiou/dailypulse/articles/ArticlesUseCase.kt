@@ -41,6 +41,20 @@ class ArticlesUseCase(private val service: ArticlesService) {
     }
 
 
+     fun dummyWebStories(): List<WebStory> {
+      val lit= WebStory(
+            wu ="Dummy Web Story",
+            imageUrl = "https://image.cnbcfm.com/api/v1/image/107326078-1698758530118-gettyimages-1765623456-wall26362_igj6ehhp.jpeg?v=1698758587&w=1920&h=1080",
+            date = formatMillisToDate(0L),
+            title = "Dummy Web Story",
+            desc = "Dummy Web Story",
+            imageNo = 1
+        )
+        return listOf(lit)
+    }
+
+
+
     private fun formatMillisToDate(millis: Long): String {
         val instant = Instant.fromEpochMilliseconds(millis)
         val dateTime = instant.toLocalDateTime(TimeZone.currentSystemDefault())
