@@ -1,6 +1,5 @@
 package com.example.shorts.articles
 
-import com.example.shorts.articles.ArticleRaw
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

@@ -40,25 +40,7 @@ struct ShortsView: View {
                 .background(Color.gray.opacity(0.1))
         }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
          .ignoresSafeArea(.all)
-         .gesture(
-                    DragGesture()
-                        .onChanged { gesture in
-                            offset = gesture.translation
-                        }
-                        .onEnded { gesture in
-                            if gesture.translation.width < -100 {
-                                // Right swipe detected
-                                print("Right swipe completed!")
-                                withAnimation{
-                                    showDetail=true
-                                }
-                               
-                                                            
-                                // Perform your action here
-                            }
-                            offset = .zero
-                        }
-         ).navigationDestination(isPresented: $showDetail, destination: {
+         .navigationDestination(isPresented: $showDetail, destination: {
              let url = URL(string: article.wu)!
              SafariView(url: url)
                  .edgesIgnoringSafeArea(.all)

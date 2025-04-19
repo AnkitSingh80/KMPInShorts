@@ -1,7 +1,5 @@
 package com.example.shorts.model
 
-import com.example.shorts.model.Author
-import com.example.shorts.model.ChildrenItem
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

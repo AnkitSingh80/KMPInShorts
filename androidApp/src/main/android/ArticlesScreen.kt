@@ -1,4 +1,4 @@
-package com.example.shorts
+package com.petros.efthymiou.dailypulse.android
 
 
 import android.content.res.Resources
@@ -28,7 +28,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material.icons.outlined.Notifications
-import androidx.compose.material.icons.outlined.Share
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -48,20 +47,18 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
-import com.example.shorts.articles.Article
-import com.example.shorts.articles.ArticlesViewModel
-import com.example.shorts.articles.WebStory
+import com.petros.efthymiou.dailypulse.articles.Article
+import com.petros.efthymiou.dailypulse.articles.ArticlesViewModel
+import com.petros.efthymiou.dailypulse.articles.WebStory
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -153,131 +150,87 @@ fun HorizontalPagerContent(article: List<WebStory>, screenWidth: Int) {
     }
 
     Box(modifier = Modifier.fillMaxSize()) {
-
         HorizontalPager(state = pagerState) { page ->
             val webStory = article[page]
             val imageUrl = webStory.imageUrl.replace("<width>", screenWidth.toString())
                 .replace("<height>", screenHeight.toString())
 
-            Box(modifier = Modifier.fillMaxSize()) {
-                AsyncImage(
-                    model = imageUrl,
-                    contentDescription = null,
-                    contentScale = ContentScale.Crop,
-                    placeholder = painterResource(id = com.example.shorts.android.R.drawable.webstory_placeholder),
-                    modifier = Modifier.fillMaxSize()
-                )
-
+            AsyncImage(
+                model = imageUrl,
+                contentDescription = null,
+                contentScale = ContentScale.Crop,
+                placeholder = painterResource(id = R.drawable.webstory_placeholder),
+                modifier = Modifier.fillMaxSize()
+            )
+        }
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 8.dp, vertical = 12.dp),
+            horizontalArrangement = Arrangement.spacedBy(4.dp)
+        ) {
+            for (i in 0 until pageCount) {
                 Box(
                     modifier = Modifier
-                        .fillMaxWidth()
-                        .align(Alignment.BottomStart)
-                        .background(
-                            brush = Brush.verticalGradient(
-                                colors = listOf(Color.Transparent, Color.Black.copy(alpha = 0.7f)),
-                                startY = 0f,
-                                endY = 300f
-                            )
-                        )
-                        .padding(horizontal = 16.dp, vertical = 16.dp)
+                        .weight(1f)
+                        .height(4.dp)
+                        .clip(RoundedCornerShape(2.dp))
+                        .background(Color.Gray.copy(alpha = 0.3f))
                 ) {
-                    Row(
-                        modifier = Modifier.fillMaxWidth(),
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        Column(modifier = Modifier.weight(1f)) {
-                            Text(
-                                text = webStory.date ?: "",
-                                color = Color.White,
-                                fontSize = 14.sp
-                            )
-                            Spacer(modifier = Modifier.height(4.dp))
-                            Text(
-                                text = webStory.desc ?: "",
-                                color = Color.White,
-                                fontSize = 18.sp,
-                                maxLines = 3,
-                                overflow = TextOverflow.Ellipsis,
-                                fontWeight = FontWeight.Bold
-                            )
-                        }
-
-                        IconButton(onClick = { /* share logic */ }) {
-                            Icon(
-                                imageVector = Icons.Outlined.Share,
-                                contentDescription = "Share",
-                                tint = Color.White
-                            )
-                        }
-                    }
-                }
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 8.dp, vertical = 12.dp)
-                        .align(Alignment.TopCenter),
-                    horizontalArrangement = Arrangement.spacedBy(4.dp)
-                ) {
-                    for (i in 0 until pageCount) {
+                    if (i <= currentPage) {
                         Box(
                             modifier = Modifier
-                                .weight(1f)
-                                .height(4.dp)
-                                .clip(RoundedCornerShape(2.dp))
-                                .background(Color.Gray.copy(alpha = 0.3f))
-                        ) {
-                            if (i <= currentPage) {
-                                Box(
-                                    modifier = Modifier
-                                        .fillMaxHeight()
-                                        .fillMaxWidth(
-                                            if (i < currentPage) 1f else animatedProgress
-                                        )
-                                        .clip(RoundedCornerShape(2.dp))
-                                        .background(Color.White)
+                                .fillMaxHeight()
+                                .fillMaxWidth(
+                                    if (i < currentPage) 1f else animatedProgress
                                 )
-                            }
-                        }
+                                .clip(RoundedCornerShape(2.dp))
+                                .background(Color.White)
+                        )
                     }
                 }
             }
         }
+    }
 
-        // Click zones for navigating pages
-        Row(modifier = Modifier.fillMaxSize()) {
-            Box(
-                modifier = Modifier
-                    .weight(1f)
-                    .fillMaxHeight()
-                    .clickable(
-                        interactionSource = remember { MutableInteractionSource() },
-                        indication = null
-                    ) {
-                        if (pagerState.currentPage > 0) {
-                            scope.launch {
-                                pagerState.animateScrollToPage(pagerState.currentPage - 1)
-                            }
+
+    Row(
+        modifier = Modifier
+            .fillMaxSize()
+    ) {
+        Box(
+            modifier = Modifier
+                .weight(1f)
+                .fillMaxHeight()
+                .clickable(
+                    interactionSource = remember { MutableInteractionSource() },
+                    indication = null
+                ) {
+                    if (pagerState.currentPage > 0) {
+                        scope.launch {
+                            pagerState.animateScrollToPage(pagerState.currentPage - 1)
                         }
                     }
-            )
-            Box(
-                modifier = Modifier
-                    .weight(1f)
-                    .fillMaxHeight()
-                    .clickable(
-                        interactionSource = remember { MutableInteractionSource() },
-                        indication = null
-                    ) {
-                        if (pagerState.currentPage < article.size - 1) {
-                            scope.launch {
-                                pagerState.animateScrollToPage(pagerState.currentPage + 1)
-                            }
+                }
+        )
+        Box(
+            modifier = Modifier
+                .weight(1f)
+                .fillMaxHeight()
+                .clickable(
+                    interactionSource = remember { MutableInteractionSource() },
+                    indication = null
+                ) {
+                    if (pagerState.currentPage < article.size - 1) {
+                        scope.launch {
+                            pagerState.animateScrollToPage(pagerState.currentPage + 1)
                         }
                     }
-            )
-        }
+                }
+        )
     }
 }
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -308,8 +261,8 @@ fun ArticleItemView(article: Article, screenWidth: Int, screenHeight: Int) {
         AsyncImage(
             modifier = Modifier.aspectRatio(16 / 9f),
             model = imageUrl,
-            error = painterResource(id = com.example.shorts.android.R.drawable.placeholder_large_default),
-            placeholder = painterResource(id = com.example.shorts.android.R.drawable.placeholder_large_default),
+            error = painterResource(id = R.drawable.placeholder_large_default),
+            placeholder = painterResource(id = R.drawable.placeholder_large_default),
             contentDescription = null
         )
         Spacer(modifier = Modifier.height(4.dp))
