@@ -1,55 +1,86 @@
-# DailyPulse
-Educational repo offered as material in the course Kotlin Multiplatform Masterclass.
-The course aims to teach the state-of-art KMP development. 
+# 📱 Shorts – A Short-Form News App Built with Kotlin Multiplatform (KMP)
 
-Daily Pulse includes a native Android and a native iOS apps, where the business logic and inftrastructure is shared in a KMP module.
+**Shorts** is a Kotlin Multiplatform side project inspired by the popular news app *Inshorts*. The goal is to deliver short-form news on both Android and iOS using a shared codebase, without compromising native performance or UX.
 
-Daily Pulse is using the news API to fetch, cache and display the top US business articles. It also contains a screen to diaply the list of news sources we use to fetch the articles from.
-Finally, it contains third screen to display informartion regarding the user's device.
+## 🚀 Motivation
 
-## Tech Stack
-It is a prototype app based on the following technologies and patterns:
+As an Android developer, this project was my opportunity to:
+- Explore cross-platform app development using **Kotlin Multiplatform**
+- Learn **SwiftUI** from scratch to build the iOS UI
+- Share core logic between Android and iOS for faster, cleaner development
 
-1. Clean Architecture
-2. MVI
-3. Ktor
-4. SQL Delight
-5. Koin
-6. Jetpack Compose
-7. Swift UI
+---
 
-## How to use
-Switch between the branches 1 to 7 to checkout from a more initial to a more advanced state of the application.
+## ✨ Features
 
-## Architectural diagram
+- 📰 Short-form news delivery
+- 🔄 API integration using shared code
+- 💾 Offline storage using SQLDelight
+- 💉 Dependency Injection with Koin (for Android)
+- 📱 Native UI on both platforms (Jetpack Compose & SwiftUI)
+- 💡 Performance-focused design with multiplatform efficiency
 
-The UI/Framework layers reside in the native apps, while everything from the View Model up to Data layer is in the common KMP module.
+---
 
+## 🧰 Tech Stack
 
-![Untitled Diagram drawio](https://github.com/petros-efthymiou/DailyPulse/assets/98778003/a1a465db-1484-4eb8-ab3c-1d43b457d7c2)
+### Shared (KMP)
+- Kotlin Multiplatform Mobile
+- SQLDelight – for local/offline storage
+- Shared ViewModels & business logic
 
-## Architectural Layers
+### Android
+- Jetpack Compose
+- Koin (Dependency Injection)
+- Kotlin Coroutines
+- SQLDelight
 
-<img width="531" alt="Screenshot 2023-12-04 at 18 19 53" src="https://github.com/petros-efthymiou/DailyPulse/assets/98778003/620fb7ca-68cb-428c-b134-4a012a8836eb">
+### iOS
+- SwiftUI
+- SQLDelight
+- Manual DI (Koin integration coming soon)
 
+---
 
-License
---------
-```
-  Copyright (C) 2023 Petros Efthymiou Open Source Project
+## 🧠 What I’ve Learned
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
+- ✅ Sharing ViewModels, DB logic, and API calls via KMP really smoothens development.
+- ⚙️ Performance remains solid — native feel on both platforms.
+- 💡 SwiftUI has been a fun and powerful way to build UIs once you get the hang of it.
 
-        http://www.apache.org/licenses/LICENSE-2.0
+---
 
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-  ```
+## 📌 Current Challenges
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/petrosefth)
+- Koin works well on Android, but iOS integration is a bit tricky. Currently using manual DI on iOS and planning to explore deeper Koin integration in future updates.
+
+---
+
+## 🛣️ Roadmap
+
+- [x] Android App
+- [x] iOS App
+- [ ] Koin DI integration on iOS
+- [ ] Desktop (Compose Multiplatform Desktop)
+- [ ] Feature enhancements (categories, bookmark, search)
+- [ ] Performance tuning and testing
+
+---
+
+## 💬 Feedback Welcome!
+
+I'm still improving this project and would **love your suggestions**!  
+Please feel free to:
+- Open issues
+- Submit PRs
+- DM or comment with:
+    - Tips to improve performance
+    - Feature ideas
+    - KMP/SwiftUI best practices
+
+---
+## 👋 Author
+
+**Ankit** – Android developer exploring the power of Kotlin Multiplatform  
+Feel free to connect on [LinkedIn](https://www.linkedin.com/in/ankit-your-linkedin) 🚀
 
