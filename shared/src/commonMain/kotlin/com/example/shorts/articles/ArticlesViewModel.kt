@@ -37,14 +37,9 @@ class ArticlesViewModel(private val dbHelper: DatabaseHelper) : BaseViewModel() 
             }
         }
 
-
         val service = ArticlesService(httpClient)
-
         useCase = ArticlesUseCase(service)
-
-
         getArticles()
-
         insertDataForNotification()
     }
 
