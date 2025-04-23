@@ -21,10 +21,30 @@ skie = "0.6.3"
 compose_jet = "1.5.12"
 sqlite = "2.5.0-alpha08"
 delight = "1.5.5"
-lifecycleViewModel = "2.8.0-rc01"
+jetbrains-compose = "1.7.1"
 uuid = "0.7.0"
-
+kobweb = "0.20.2"
+kmongo-coroutine = "5.2.0"
+serialization = "1.8.0"
+kmongo = "4.9.0"
+webcore = "1.5.2"
 [libraries]
+
+compose-html-core = { module = "org.jetbrains.compose.html:html-core", version.ref = "jetbrains-compose" }
+kobweb-api = { module = "com.varabyte.kobweb:kobweb-api", version.ref = "kobweb" }
+kobweb-core = { module = "com.varabyte.kobweb:kobweb-core ", version.ref = "kobweb" }
+kobweb-silk = { module = "com.varabyte.kobweb:kobweb-silk", version.ref = "kobweb" }
+kobweb-worker = { module = "com.varabyte.kobweb:kobweb-worker", version.ref = "kobweb" }
+kobwebx-markdown = { module = "com.varabyte.kobwebx:kobwebx-markdown", version.ref = "kobweb" }
+kobwebx-serialization-kotlinx = { module = "com.varabyte.kobwebx:kobwebx-serialization-kotlinx", version.ref = "kobweb" }
+silk-foundation = { module = "com.varabyte.kobweb:silk-foundation", version.ref = "kobweb" }
+silk-icons-fa = { module = "com.varabyte.kobwebx:silk-icons-fa", version.ref = "kobweb" }
+silk-icons-mdi = { module = "com.varabyte.kobwebx:silk-icons-mdi", version.ref = "kobweb" }
+silk_theme = { module = "com.varabyte.kobweb:kobweb-silk-theme", version.ref = "kobweb" }
+kmongo-coroutine = { module = "org.litote.kmongo:kmongo-coroutine", version.ref = "kmongo-coroutine" }
+kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+kmongo-serialization = { module = "org.litote.kmongo:kmongo-serialization", version.ref = "kmongo" }
+web-core = { module = "org.jetbrains.compose.web:web-core",version.ref = "webcore"}
 android-driver = { module = "com.squareup.sqldelight:android-driver", version.ref = "runtime" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
@@ -68,3 +88,4 @@ compose-compiler = { id = "org.jetbrains.compose", version.ref = "compose_jet" }
 room = { id = "androidx.room", version.ref = "room" }
 skie = { id = "co.touchlab.skie", version.ref = "skie" }
 sqlDelight = {id = "com.squareup.sqldelight", version.ref = "delight"}
+kobweb-application = { id = "com.varabyte.kobweb.application", version.ref = "kobweb" }

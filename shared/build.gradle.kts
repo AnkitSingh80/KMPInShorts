@@ -1,10 +1,10 @@
+
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.skie)
     kotlin("plugin.serialization") version "1.9.20"
     alias(libs.plugins.sqlDelight)
-
 }
 
 @OptIn(org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi::class)
@@ -67,6 +67,26 @@ kotlin {
 
             }
         }
+
+      /*  val jsMain by getting {
+            dependencies {
+                implementation(libs.compose.html.core)
+                implementation(libs.kobweb.silk)
+                implementation(libs.web.core)
+                implementation(libs.kobweb.core)
+                implementation(libs.kotlinx.serialization)
+                implementation(project(":worker"))
+            }
+        }*/
+
+       /* val jvmMain by getting {
+            dependencies {
+                implementation(libs.kobweb.api)
+                implementation(libs.kmongo.coroutine)
+                implementation(libs.kmongo.serialization)
+                implementation(libs.kotlinx.serialization)
+            }
+        }*/
 
         val commonTest by getting {
             dependencies {
