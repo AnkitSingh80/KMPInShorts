@@ -1,0 +1,324 @@
+{
+"": {
+  "emit-module-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/module/shared.d",
+  "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/module/shared.swiftdeps"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KtorUtils/KtorUtils.Pipeline.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorUtils.Pipeline.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorUtils.Pipeline.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorUtils.Pipeline.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorUtils.Pipeline~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KtorUtils/KtorUtils.WeekDay.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorUtils.WeekDay.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorUtils.WeekDay.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorUtils.WeekDay.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorUtils.WeekDay~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KtorUtils/KtorUtils.Month.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorUtils.Month.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorUtils.Month.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorUtils.Month.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorUtils.Month~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KtorClientCore/KtorClientCore.HttpClientCall.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorClientCore.HttpClientCall.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorClientCore.HttpClientCall.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorClientCore.HttpClientCall.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorClientCore.HttpClientCall~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KtorClientCore/KtorClientCore.HttpClientEngine.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorClientCore.HttpClientEngine.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorClientCore.HttpClientEngine.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorClientCore.HttpClientEngine.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorClientCore.HttpClientEngine~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Shared/Shared.ArticlesService.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.ArticlesService.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.ArticlesService.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.ArticlesService.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.ArticlesService~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Shared/Shared.SharedModuleKt.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.SharedModuleKt.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.SharedModuleKt.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.SharedModuleKt.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.SharedModuleKt~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Shared/Shared.IosModuleKt.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.IosModuleKt.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.IosModuleKt.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.IosModuleKt.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.IosModuleKt~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Shared/Shared.GetMyViewModelKt.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.GetMyViewModelKt.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.GetMyViewModelKt.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.GetMyViewModelKt.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.GetMyViewModelKt~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Shared/Shared.ArticlesUseCase.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.ArticlesUseCase.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.ArticlesUseCase.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.ArticlesUseCase.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.ArticlesUseCase~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Shared/Shared.KoinIosMainKt.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.KoinIosMainKt.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.KoinIosMainKt.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.KoinIosMainKt.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.KoinIosMainKt~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Shared/Shared.ArticlesViewModel.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.ArticlesViewModel.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.ArticlesViewModel.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.ArticlesViewModel.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Shared.ArticlesViewModel~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.SkieSwiftOptionalMutableSharedFlow.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalMutableSharedFlow.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalMutableSharedFlow.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalMutableSharedFlow.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalMutableSharedFlow~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.SkieSwiftOptionalFlow.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalFlow.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalFlow.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalFlow.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalFlow~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.AsyncStreamDispatcherDelegate.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.AsyncStreamDispatcherDelegate.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.AsyncStreamDispatcherDelegate.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.AsyncStreamDispatcherDelegate.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.AsyncStreamDispatcherDelegate~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.Namespace.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.Namespace.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.Namespace.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.Namespace.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.Namespace~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.SkieSwiftStateFlow.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftStateFlow.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftStateFlow.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftStateFlow.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftStateFlow~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.FlowConversions.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.FlowConversions.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.FlowConversions.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.FlowConversions.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.FlowConversions~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.SkieSwiftOptionalStateFlow.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalStateFlow.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalStateFlow.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalStateFlow.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalStateFlow~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.SkieSwiftFlow.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftFlow.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftFlow.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftFlow.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftFlow~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.SkieSwiftSharedFlow.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftSharedFlow.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftSharedFlow.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftSharedFlow.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftSharedFlow~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.SkieSwiftOptionalMutableStateFlow.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalMutableStateFlow.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalMutableStateFlow.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalMutableStateFlow.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalMutableStateFlow~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.SkieSwiftOptionalSharedFlow.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalSharedFlow.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalSharedFlow.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalSharedFlow.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftOptionalSharedFlow~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.SkieSwiftMutableSharedFlow.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftMutableSharedFlow.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftMutableSharedFlow.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftMutableSharedFlow.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftMutableSharedFlow~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.SwiftCoroutineDispatcher.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SwiftCoroutineDispatcher.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SwiftCoroutineDispatcher.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SwiftCoroutineDispatcher.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SwiftCoroutineDispatcher~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.SkieSwiftMutableStateFlow.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftMutableStateFlow.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftMutableStateFlow.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftMutableStateFlow.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftMutableStateFlow~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.Skie_SuspendResult.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.Skie_SuspendResult.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.Skie_SuspendResult.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.Skie_SuspendResult.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.Skie_SuspendResult~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.SkieSwiftFlowIterator.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftFlowIterator.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftFlowIterator.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftFlowIterator.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieSwiftFlowIterator~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Skie/Skie.SkieColdFlowIterator.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieColdFlowIterator.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieColdFlowIterator.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieColdFlowIterator.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Skie.SkieColdFlowIterator~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Stdlib/Stdlib.KVariance.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Stdlib.KVariance.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Stdlib.KVariance.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Stdlib.KVariance.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Stdlib.KVariance~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Stdlib/Stdlib.SuspendFunction1.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Stdlib.SuspendFunction1.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Stdlib.SuspendFunction1.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Stdlib.SuspendFunction1.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Stdlib.SuspendFunction1~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Stdlib/Stdlib.SuspendFunction2.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Stdlib.SuspendFunction2.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Stdlib.SuspendFunction2.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Stdlib.SuspendFunction2.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Stdlib.SuspendFunction2~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/Stdlib/Stdlib.LazyThreadSafetyMode.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Stdlib.LazyThreadSafetyMode.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Stdlib.LazyThreadSafetyMode.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Stdlib.LazyThreadSafetyMode.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/Stdlib.LazyThreadSafetyMode~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KotlinxCoroutinesCore/KotlinxCoroutinesCore.Job.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.Job.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.Job.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.Job.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.Job~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KotlinxCoroutinesCore/KotlinxCoroutinesCore.SelectClause.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectClause.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectClause.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectClause.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectClause~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KotlinxCoroutinesCore/KotlinxCoroutinesCore.SelectInstance.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectInstance.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectInstance.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectInstance.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectInstance~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KotlinxCoroutinesCore/KotlinxCoroutinesCore.FlowCollector.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.FlowCollector.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.FlowCollector.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.FlowCollector.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.FlowCollector~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KotlinxCoroutinesCore/KotlinxCoroutinesCore.SelectClause2.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectClause2.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectClause2.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectClause2.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectClause2~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KotlinxCoroutinesCore/KotlinxCoroutinesCore.SelectClause0.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectClause0.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectClause0.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectClause0.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectClause0~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KotlinxCoroutinesCore/KotlinxCoroutinesCore.Flow.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.Flow.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.Flow.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.Flow.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.Flow~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KotlinxCoroutinesCore/KotlinxCoroutinesCore.SelectClause1.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectClause1.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectClause1.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectClause1.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxCoroutinesCore.SelectClause1~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KtorIo/KtorIo.ByteReadChannel.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorIo.ByteReadChannel.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorIo.ByteReadChannel.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorIo.ByteReadChannel.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorIo.ByteReadChannel~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KtorIo/KtorIo.ByteWriteChannel.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorIo.ByteWriteChannel.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorIo.ByteWriteChannel.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorIo.ByteWriteChannel.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorIo.ByteWriteChannel~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KotlinxSerializationCore/KotlinxSerializationCore.StructureKind.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.StructureKind.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.StructureKind.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.StructureKind.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.StructureKind~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KotlinxSerializationCore/KotlinxSerializationCore.SerialKind.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.SerialKind.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.SerialKind.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.SerialKind.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.SerialKind~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KotlinxSerializationCore/KotlinxSerializationCore.PolymorphicKind.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.PolymorphicKind.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.PolymorphicKind.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.PolymorphicKind.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.PolymorphicKind~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KotlinxSerializationCore/KotlinxSerializationCore.SerializersModule.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.SerializersModule.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.SerializersModule.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.SerializersModule.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.SerializersModule~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KotlinxSerializationCore/KotlinxSerializationCore.PrimitiveKind.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.PrimitiveKind.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.PrimitiveKind.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.PrimitiveKind.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KotlinxSerializationCore.PrimitiveKind~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KtorHttp/KtorHttp.OutgoingContent.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorHttp.OutgoingContent.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorHttp.OutgoingContent.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorHttp.OutgoingContent.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorHttp.OutgoingContent~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KtorHttp/KtorHttp.OutgoingContent.ProtocolUpgrade.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorHttp.OutgoingContent.ProtocolUpgrade.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorHttp.OutgoingContent.ProtocolUpgrade.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorHttp.OutgoingContent.ProtocolUpgrade.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorHttp.OutgoingContent.ProtocolUpgrade~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KtorHttp/KtorHttp.OutgoingContent.WriteChannelContent.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorHttp.OutgoingContent.WriteChannelContent.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorHttp.OutgoingContent.WriteChannelContent.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorHttp.OutgoingContent.WriteChannelContent.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KtorHttp.OutgoingContent.WriteChannelContent~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KoinCore/KoinCore.Level.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KoinCore.Level.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KoinCore.Level.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KoinCore.Level.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KoinCore.Level~partial.swiftmodule"
+},
+"/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift/generated/KoinCore/KoinCore.Kind.swift": {
+    "object": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KoinCore.Kind.o",
+    "dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KoinCore.Kind.d",
+    "swift-dependencies": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KoinCore.Kind.swiftdeps",
+    "swiftmodule": "/Users/ankit/KMPInShorts/shared/build/skie/binaries/debugFramework/DEBUG/iosSimulatorArm64/swift-compiler/object-files/KoinCore.Kind~partial.swiftmodule"
+}
+}

@@ -1,0 +1,1 @@
+{"src/jsMain/kotlin/com/exmaple/blogmultiplatform/worker/EchoWorkerFactory.kt":["createIOSerializer:com.exmaple.blogmultiplatform.worker.EchoWorkerFactory","EchoWorkerFactory:com.exmaple.blogmultiplatform.worker","<init>:com.exmaple.blogmultiplatform.worker.EchoWorkerFactory","createStrategy:com.exmaple.blogmultiplatform.worker.EchoWorkerFactory"]}

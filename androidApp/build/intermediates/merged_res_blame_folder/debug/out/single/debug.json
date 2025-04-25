@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.example.shorts.android.androidApp-merged_res-58:/drawable_placeholder_large_default.webp.flat",
+        "source": "com.example.shorts.android.androidApp-main-60:/drawable/placeholder_large_default.webp"
+    },
+    {
+        "merged": "com.example.shorts.android.androidApp-merged_res-58:/drawable_webstory_placeholder.png.flat",
+        "source": "com.example.shorts.android.androidApp-main-60:/drawable/webstory_placeholder.png"
+    }
+]

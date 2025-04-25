@@ -1,0 +1,11 @@
+framework module shared {
+    umbrella header "shared.h"
+
+
+    use Foundation
+}
+
+module shared.Swift {
+    header "shared-Swift.h"
+    requires objc
+}

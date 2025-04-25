@@ -1,0 +1,7 @@
+{
+    "jvmVersion": "17.0.12+1-b1207.37",
+    "compilerVersion": "1.9.22",
+    "xcodeVersion": "16.2",
+    "availableProcessors": 8,
+    "maxJvmMemory": 2147483648
+}
