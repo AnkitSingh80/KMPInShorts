@@ -1,0 +1,121 @@
+(function (factory) {
+  if (typeof define === 'function' && define.amd)
+    define(['exports'], factory);
+  else if (typeof exports === 'object')
+    factory(module.exports);
+  else
+    globalThis['kobweb-frontend-silk-foundation'] = factory(typeof globalThis['kobweb-frontend-silk-foundation'] === 'undefined' ? {} : globalThis['kobweb-frontend-silk-foundation']);
+}(function (_) {
+  'use strict';
+  //region block: pre-declaration
+  //endregion
+  var com_varabyte_kobweb_silk_SilkStyleSheet$stable;
+  var com_varabyte_kobweb_silk_init_CssStyleRegistrarImpl_Entry$stable;
+  var com_varabyte_kobweb_silk_init_SilkStylesheetInstance$stable;
+  var com_varabyte_kobweb_silk_style_CssRule_OfMedia$stable;
+  var com_varabyte_kobweb_silk_style_CssRule_NonMediaCssRule$stable;
+  var com_varabyte_kobweb_silk_style_CssRule_OfAttributeSelector$stable;
+  var com_varabyte_kobweb_silk_style_CssRule_OfPseudoClass$stable;
+  var com_varabyte_kobweb_silk_style_CssRule_OfPseudoElement$stable;
+  var com_varabyte_kobweb_silk_style_CssRule_CompositeOpen$stable;
+  var com_varabyte_kobweb_silk_style_CssRule_CompositeClosed$stable;
+  var com_varabyte_kobweb_silk_style_CssRule$stable;
+  var com_varabyte_kobweb_silk_style_CssStyle_Restricted_Base$stable;
+  var com_varabyte_kobweb_silk_style_CssStyle_Restricted$stable;
+  var com_varabyte_kobweb_silk_style_CssStyle$stable;
+  var com_varabyte_kobweb_silk_style_SimpleCssStyle$stable;
+  var com_varabyte_kobweb_silk_style_ExtendingCssStyle$stable;
+  var com_varabyte_kobweb_silk_style_ImmutableCssStyle$stable;
+  var com_varabyte_kobweb_silk_style_CssStyleScope$stable;
+  var com_varabyte_kobweb_silk_style_CssStyleBaseScope$stable;
+  var com_varabyte_kobweb_silk_style_StyleGroup_Light$stable;
+  var com_varabyte_kobweb_silk_style_StyleGroup_Dark$stable;
+  var com_varabyte_kobweb_silk_style_StyleGroup_ColorAgnostic$stable;
+  var com_varabyte_kobweb_silk_style_StyleGroup_ColorAware$stable;
+  var com_varabyte_kobweb_silk_style_CssStyleVariant$stable;
+  var com_varabyte_kobweb_silk_style_SimpleCssStyleVariant$stable;
+  var com_varabyte_kobweb_silk_style_ExtendingCssStyleVariant$stable;
+  var com_varabyte_kobweb_silk_style_animation_KeyframesBuilder$stable;
+  var com_varabyte_kobweb_silk_style_animation_Keyframes$stable;
+  var com_varabyte_kobweb_silk_style_breakpoint_BreakpointUnitValue_Px$stable;
+  var com_varabyte_kobweb_silk_style_breakpoint_BreakpointUnitValue_Em$stable;
+  var com_varabyte_kobweb_silk_style_breakpoint_BreakpointUnitValue_Rem$stable;
+  var com_varabyte_kobweb_silk_style_breakpoint_BreakpointUnitValue$stable;
+  var com_varabyte_kobweb_silk_style_breakpoint_BreakpointValues$stable;
+  var com_varabyte_kobweb_silk_style_breakpoint_ResponsiveValues$stable;
+  var com_varabyte_kobweb_silk_style_layer_LayerListBuilder$stable;
+  var _SilkTheme;
+  var com_varabyte_kobweb_silk_theme_MutableSilkTheme$stable;
+  var com_varabyte_kobweb_silk_theme_ImmutableSilkTheme$stable;
+  var com_varabyte_kobweb_silk_theme_colors_palette_MutablePalette_ColorGroup_EntryDelegate$stable;
+  var com_varabyte_kobweb_silk_theme_colors_palette_MutablePalette_ColorGroup$stable;
+  var com_varabyte_kobweb_silk_theme_colors_palette_MutablePalette$stable;
+  var com_varabyte_kobweb_silk_theme_colors_palette_MutablePalettes$stable;
+  var com_varabyte_kobweb_silk_theme_shapes_Path$stable;
+  var com_varabyte_kobweb_silk_theme_shapes_CirclePath$stable;
+  var com_varabyte_kobweb_silk_theme_shapes_PolygonPath$stable;
+  var com_varabyte_kobweb_silk_theme_shapes_InsetPath$stable;
+  var com_varabyte_kobweb_silk_theme_shapes_RectF$stable;
+  var com_varabyte_kobweb_silk_theme_shapes_Rect$stable;
+  var com_varabyte_kobweb_silk_theme_shapes_CircleF$stable;
+  var com_varabyte_kobweb_silk_theme_shapes_Circle$stable;
+  var com_varabyte_kobweb_silk_theme_shapes_PolygonF$stable;
+  var com_varabyte_kobweb_silk_theme_shapes_Polygon$stable;
+  //region block: init
+  com_varabyte_kobweb_silk_SilkStyleSheet$stable = 0;
+  com_varabyte_kobweb_silk_init_CssStyleRegistrarImpl_Entry$stable = 0;
+  com_varabyte_kobweb_silk_init_SilkStylesheetInstance$stable = 8;
+  com_varabyte_kobweb_silk_style_CssRule_OfMedia$stable = 8;
+  com_varabyte_kobweb_silk_style_CssRule_NonMediaCssRule$stable = 0;
+  com_varabyte_kobweb_silk_style_CssRule_OfAttributeSelector$stable = 0;
+  com_varabyte_kobweb_silk_style_CssRule_OfPseudoClass$stable = 0;
+  com_varabyte_kobweb_silk_style_CssRule_OfPseudoElement$stable = 0;
+  com_varabyte_kobweb_silk_style_CssRule_CompositeOpen$stable = 8;
+  com_varabyte_kobweb_silk_style_CssRule_CompositeClosed$stable = 8;
+  com_varabyte_kobweb_silk_style_CssRule$stable = 8;
+  com_varabyte_kobweb_silk_style_CssStyle_Restricted_Base$stable = 0;
+  com_varabyte_kobweb_silk_style_CssStyle_Restricted$stable = 0;
+  com_varabyte_kobweb_silk_style_CssStyle$stable = 0;
+  com_varabyte_kobweb_silk_style_SimpleCssStyle$stable = 0;
+  com_varabyte_kobweb_silk_style_ExtendingCssStyle$stable = 0;
+  com_varabyte_kobweb_silk_style_ImmutableCssStyle$stable = 8;
+  com_varabyte_kobweb_silk_style_CssStyleScope$stable = 0;
+  com_varabyte_kobweb_silk_style_CssStyleBaseScope$stable = 0;
+  com_varabyte_kobweb_silk_style_StyleGroup_Light$stable = 0;
+  com_varabyte_kobweb_silk_style_StyleGroup_Dark$stable = 0;
+  com_varabyte_kobweb_silk_style_StyleGroup_ColorAgnostic$stable = 0;
+  com_varabyte_kobweb_silk_style_StyleGroup_ColorAware$stable = 0;
+  com_varabyte_kobweb_silk_style_CssStyleVariant$stable = 0;
+  com_varabyte_kobweb_silk_style_SimpleCssStyleVariant$stable = 0;
+  com_varabyte_kobweb_silk_style_ExtendingCssStyleVariant$stable = 0;
+  com_varabyte_kobweb_silk_style_animation_KeyframesBuilder$stable = 8;
+  com_varabyte_kobweb_silk_style_animation_Keyframes$stable = 8;
+  com_varabyte_kobweb_silk_style_breakpoint_BreakpointUnitValue_Px$stable = 0;
+  com_varabyte_kobweb_silk_style_breakpoint_BreakpointUnitValue_Em$stable = 0;
+  com_varabyte_kobweb_silk_style_breakpoint_BreakpointUnitValue_Rem$stable = 0;
+  com_varabyte_kobweb_silk_style_breakpoint_BreakpointUnitValue$stable = 0;
+  com_varabyte_kobweb_silk_style_breakpoint_BreakpointValues$stable = 0;
+  com_varabyte_kobweb_silk_style_breakpoint_ResponsiveValues$stable = 0;
+  com_varabyte_kobweb_silk_style_layer_LayerListBuilder$stable = 8;
+  _SilkTheme = null;
+  com_varabyte_kobweb_silk_theme_MutableSilkTheme$stable = 8;
+  com_varabyte_kobweb_silk_theme_ImmutableSilkTheme$stable = 8;
+  com_varabyte_kobweb_silk_theme_colors_palette_MutablePalette_ColorGroup_EntryDelegate$stable = 8;
+  com_varabyte_kobweb_silk_theme_colors_palette_MutablePalette_ColorGroup$stable = 8;
+  com_varabyte_kobweb_silk_theme_colors_palette_MutablePalette$stable = 8;
+  com_varabyte_kobweb_silk_theme_colors_palette_MutablePalettes$stable = 8;
+  com_varabyte_kobweb_silk_theme_shapes_Path$stable = 0;
+  com_varabyte_kobweb_silk_theme_shapes_CirclePath$stable = 0;
+  com_varabyte_kobweb_silk_theme_shapes_PolygonPath$stable = 8;
+  com_varabyte_kobweb_silk_theme_shapes_InsetPath$stable = 8;
+  com_varabyte_kobweb_silk_theme_shapes_RectF$stable = 8;
+  com_varabyte_kobweb_silk_theme_shapes_Rect$stable = 8;
+  com_varabyte_kobweb_silk_theme_shapes_CircleF$stable = 0;
+  com_varabyte_kobweb_silk_theme_shapes_Circle$stable = 0;
+  com_varabyte_kobweb_silk_theme_shapes_PolygonF$stable = 8;
+  com_varabyte_kobweb_silk_theme_shapes_Polygon$stable = 8;
+  //endregion
+  return _;
+}));
+
+//# sourceMappingURL=kobweb-frontend-silk-foundation.js.map

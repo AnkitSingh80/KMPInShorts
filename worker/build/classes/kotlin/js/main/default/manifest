@@ -1,0 +1,10 @@
+abi_version=1.201.0
+builtins_platform=JS
+compiler_version=2.1.0
+depends=com.varabyte.kobweb\:kobweb-worker com.varabyte.kobweb\:kobweb-silk com.varabyte.kobweb\:silk-widgets-kobweb com.varabyte.kobweb\:silk-widgets com.varabyte.kobweb\:silk-foundation com.varabyte.kobweb\:kobweb-serialization com.varabyte.kobweb\:kobweb-core com.varabyte.kobweb\:kobweb-worker-interface com.varabyte.kobweb\:kobweb-compose com.varabyte.kobweb\:compose-html-ext org.jetbrains.compose.html\:html-core org.jetbrains.compose.html\:internal-html-core-runtime org.jetbrains.compose.runtime\:runtime com.varabyte.kobweb\:browser-ext org.jetbrains.kotlinx\:kotlinx-coroutines-core org.jetbrains.kotlinx\:atomicfu org.jetbrains.kotlin\:kotlin-dom-api-compat kotlin
+ir_signature_versions=1,2
+jsOutputName=worker-c7fc
+metadata_version=1.4.1
+serializedIrFileFingerprints=em70cvqzj5nv.2wbfj6xcdd8b2 dn8z40hbdg71.i1f0tdfexdh1 1pdq9qmzm898.1vqgjjfuxa35l
+serializedKlibFingerprint=2xw44dqa45zgh.3ep3sw8xtvnay
+unique_name=com.exmaple.blogmultiplatform.worker\:worker

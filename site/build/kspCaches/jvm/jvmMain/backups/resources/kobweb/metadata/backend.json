@@ -1,0 +1,1 @@
+{"backendData":{"initMethods":[{"fqn":"com.exmaple.blogmultiplatform.models.initMongoDB"}],"apiMethods":[{"fqn":"com.exmaple.blogmultiplatform.api.userCheck","route":"/usercheck"},{"fqn":"com.exmaple.blogmultiplatform.api.checkUserId","route":"/checkuserid"}]}}

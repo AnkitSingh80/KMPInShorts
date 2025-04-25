@@ -1,0 +1,10 @@
+abi_version=1.201.0
+builtins_platform=JS
+compiler_version=2.1.0
+depends=com.exmaple.blogmultiplatform.worker\:worker org.jetbrains.compose.runtime\:runtime org.jetbrains.kotlinx\:kotlinx-serialization-json org.jetbrains.compose.html\:html-core com.varabyte.kobweb\:kobweb-silk com.varabyte.kobweb\:kobweb-core org.jetbrains.kotlinx\:kotlinx-serialization-core org.jetbrains.compose.html\:internal-html-core-runtime com.varabyte.kobweb\:silk-widgets-kobweb com.varabyte.kobweb\:silk-widgets com.varabyte.kobweb\:silk-foundation com.varabyte.kobweb\:kobweb-compose com.varabyte.kobweb\:compose-html-ext com.varabyte.kobweb\:kobweb-worker-interface com.varabyte.kobweb\:browser-ext org.jetbrains.kotlinx\:kotlinx-coroutines-core org.jetbrains.kotlinx\:atomicfu org.jetbrains.kotlin\:kotlin-dom-api-compat kotlin
+ir_signature_versions=1,2
+jsOutputName=blogmultiplatform
+metadata_version=1.4.1
+serializedIrFileFingerprints=3malw6wa99zvh.kv1y9j2uxkyc 2p2vl2ky9eo4e.1ctai50j14j4i 1pmf5bj5pon7a.fttzai7t6ebf 2un1vrn6aq1kp.2w1hyojfmwywd hzznu0k1bf5p.1pfql16p5u0a6 jgz2m21d2xv.2y0q8iors0jvi 3dflkq3u8x8b3.3qhlqruxjj2gd 3fufpbeh8uwho.33pgio9flmsou 2n684nl0c7zqq.2zjssny5aujx5 9qvbs5s97xf8.2ycqsgb8ibe9v 27hiqe9eiwcmj.3kupeeqkhupul 2eup6lspsmvwe.1azm7ec8ws7gi 3hs8bibe82zjh.1z4n2t24bg6gs
+serializedKlibFingerprint=2guta6o8cmqx4.1c6w94xrffy72
+unique_name=com.exmaple.blogmultiplatform\:site
