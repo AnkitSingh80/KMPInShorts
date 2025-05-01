@@ -1,6 +1,7 @@
 package com.example.shorts
 
 import android.app.Application
+import com.example.shorts.android.BuildConfig
 import com.example.shorts.di.androidModule
 import com.example.shorts.di.sharedModule
 import org.koin.android.ext.koin.androidContext
@@ -12,7 +13,7 @@ class App : Application() {
         super.onCreate()
         startKoin {
             androidContext(this@App)
-            modules(androidModule, sharedModule)
+            modules(androidModule, sharedModule(BuildConfig.BASE_URL))
         }
     }
 }

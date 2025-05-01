@@ -1,0 +1,4 @@
+com.example.shorts.android.test.androidApp-androidTest-0 /Users/ankit/KMPInShorts/androidApp/build/generated/res/resValues/androidTest/debug
+com.example.shorts.android.test.androidApp-mergeDebugAndroidTestResources-1 /Users/ankit/KMPInShorts/androidApp/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.shorts.android.test.androidApp-mergeDebugAndroidTestResources-2 /Users/ankit/KMPInShorts/androidApp/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.shorts.android.test.androidApp-merged_res-3 /Users/ankit/KMPInShorts/androidApp/build/intermediates/merged_res/debugAndroidTest

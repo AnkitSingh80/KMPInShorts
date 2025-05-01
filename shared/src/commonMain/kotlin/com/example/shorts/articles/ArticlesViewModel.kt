@@ -15,7 +15,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.serialization.json.Json
 
 
-class ArticlesViewModel(private val dbHelper: DatabaseHelper) : BaseViewModel() {
+class ArticlesViewModel(private val dbHelper: DatabaseHelper, private val url: String) : BaseViewModel() {
 
     private val _articlesState: MutableStateFlow<ArticlesState> =
         MutableStateFlow(ArticlesState(loading = true))
@@ -38,7 +38,7 @@ class ArticlesViewModel(private val dbHelper: DatabaseHelper) : BaseViewModel() 
         }
 
 
-        val service = ArticlesService(httpClient)
+        val service = ArticlesService(httpClient, url)
 
         useCase = ArticlesUseCase(service)
 

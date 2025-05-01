@@ -14,9 +14,16 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
+
+        buildConfigField(
+            "String",
+            "BASE_URL",
+            "\"${project.findProperty("BASE_URL") ?: "https://api.npoint.io/3bd9a7e496171990dde2"}\""
+        )
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()

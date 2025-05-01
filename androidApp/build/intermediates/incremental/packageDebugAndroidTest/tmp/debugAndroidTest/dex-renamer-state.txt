@@ -1,0 +1,4 @@
+#Wed Apr 30 14:32:27 IST 2025
+base.0=/Users/ankit/KMPInShorts/androidApp/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+path.0=0/classes.dex
+renamed.0=classes.dex

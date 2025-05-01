@@ -14,7 +14,6 @@ const val notification = "Not-01"
 fun TnnShortsNavHost(navController: NavHostController,
                      viewModel: ArticlesViewModel
 ) {
-
     NavHost(
         navController = navController,
         startDestination = homeRoute

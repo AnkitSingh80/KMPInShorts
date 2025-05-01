@@ -6,11 +6,10 @@ import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.*
 
-class ArticlesService(private val httpClient: HttpClient) {
+class ArticlesService(private val httpClient: HttpClient, private val url: String) {
 
     suspend fun fetchArticles(pageNo: Int): Response {
-        var url = "https://api.npoint.io/3bd9a7e496171990dde2"
-        when (pageNo) {
+      /*  when (pageNo) {
             1 -> {
                 url = "https://api.npoint.io/3bd9a7e496171990dde2"
             }
@@ -20,7 +19,7 @@ class ArticlesService(private val httpClient: HttpClient) {
             3 -> {
                 url = "https://api.npoint.io/749f63b415114911b35e"
             }
-        }
+        }*/
         val response: NewsResponse =
             httpClient.get(url) {
                 headers {
