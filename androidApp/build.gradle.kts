@@ -18,7 +18,7 @@ android {
         buildConfigField(
             "String",
             "BASE_URL",
-            "\"${project.findProperty("BASE_URL") ?: "https://api.npoint.io/3bd9a7e496171990dde2"}\""
+            "\"${project.findProperty("BASE_URL") ?: ""}\""
         )
     }
     buildFeatures {

@@ -10,5 +10,5 @@ public final class BuildConfig {
   public static final int VERSION_CODE = 1;
   public static final String VERSION_NAME = "1.0";
   // Field from default config.
-  public static final String BASE_URL = "https://api.npoint.io/3bd9a7e496171990dde2";
+  public static final String BASE_URL = "";
 }
