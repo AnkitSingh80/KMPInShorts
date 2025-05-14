@@ -91,6 +91,10 @@ kotlin {
         val commonTest by getting {
             dependencies {
                 implementation(libs.kotlin.test)
+                implementation(libs.coroutines.test)
+                implementation(libs.ktor.client.mock)
+                implementation(libs.assertk)
+                implementation(libs.turbine)
             }
         }
     }
@@ -108,6 +112,10 @@ android {
     defaultConfig {
         minSdk = 24
     }
+}
+dependencies {
+    testImplementation(libs.junit.jupiter)
+    testImplementation(libs.junit.jupiter)
 }
 
 

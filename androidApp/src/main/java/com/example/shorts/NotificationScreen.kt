@@ -32,7 +32,7 @@ fun NotificationScreen(
     viewModel: ArticlesViewModel,
     onDismiss: () -> Unit
 ) {
-    val notificationsFlow = viewModel.fetchAllNotification()
+    val notificationsFlow = viewModel.fetchAllNotifications()
     val notificationsList by  notificationsFlow.collectAsState(initial = emptyList())
 
     Scaffold(

@@ -9,6 +9,7 @@ compose-compiler = "1.5.3"
 compose-material3 = "1.1.2"
 androidx-activityCompose = "1.7.2"
 kotlinxCoroutinesCore = "1.8.1"
+kotlinxCoroutinesTest = "1.10.2"
 kotlinxUuidVersion = "0.0.2"
 lifecycleViewmodelKtx = "2.6.2"
 navigationCompose = "2.7.5"
@@ -28,6 +29,11 @@ kmongo-coroutine = "5.2.0"
 serialization = "1.8.0"
 kmongo = "4.9.0"
 webcore = "1.5.2"
+junitJupiter = "5.8.1"
+assertk = "0.28.1"
+turbine = "1.2.0"
+coroutines-test = "1.10.2"
+
 [libraries]
 
 compose-html-core = { module = "org.jetbrains.compose.html:html-core", version.ref = "jetbrains-compose" }
@@ -37,6 +43,12 @@ kobweb-silk = { module = "com.varabyte.kobweb:kobweb-silk", version.ref = "kobwe
 kobweb-worker = { module = "com.varabyte.kobweb:kobweb-worker", version.ref = "kobweb" }
 kobwebx-markdown = { module = "com.varabyte.kobwebx:kobwebx-markdown", version.ref = "kobweb" }
 kobwebx-serialization-kotlinx = { module = "com.varabyte.kobwebx:kobwebx-serialization-kotlinx", version.ref = "kobweb" }
+ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktorClient" }
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+assertk = { module = "com.willowtreeapps.assertk:assertk", version.ref = "assertk" }
+coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines-test" }
+
+
 silk-foundation = { module = "com.varabyte.kobweb:silk-foundation", version.ref = "kobweb" }
 silk-icons-fa = { module = "com.varabyte.kobwebx:silk-icons-fa", version.ref = "kobweb" }
 silk-icons-mdi = { module = "com.varabyte.kobwebx:silk-icons-mdi", version.ref = "kobweb" }
@@ -76,6 +88,7 @@ room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 runtime = { module = "com.squareup.sqldelight:runtime", version.ref = "runtime" }
 sqlite-bundled = { module = "androidx.sqlite:sqlite-bundled", version.ref = "sqlite" }
 uuid = { module = "com.benasher44:uuid", version.ref = "uuid" }
+junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junitJupiter" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
