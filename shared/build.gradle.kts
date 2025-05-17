@@ -64,11 +64,12 @@ kotlin {
             }
         }
 
-        val iosMain by getting {
-            dependencies {
-                implementation(libs.ktor.client.darwin)
-                implementation(libs.native.driver)
-
+        if (!skipNative) {
+            val iosMain by getting {
+                dependencies {
+                    implementation(libs.ktor.client.darwin)
+                    implementation(libs.native.driver)
+                }
             }
         }
 
