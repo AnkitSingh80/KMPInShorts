@@ -5,7 +5,7 @@ on:
     branches:
       - master
       - develop
-      - feature/* # optional: triggers on feature branches like feature/login
+      - feature/*
 
 jobs:
   build:
@@ -25,8 +25,19 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Build debug APK
-        run: ./gradlew :androidApp:assembleDebug
+      - name: Clear potential Gradle corruption
+        run: |
+          rm -rf ~/.gradle/caches/
+          rm -rf ~/.gradle/daemon/
+          rm -rf ~/.gradle/native/
+          rm -rf ~/.gradle/wrapper/
+          rm -rf .gradle/
+
+      - name: Clean project
+        run: ./gradlew clean
+
+      - name: Build debug APK with refreshed dependencies
+        run: ./gradlew --refresh-dependencies :androidApp:assembleDebug
 
       - name: Upload to Firebase App Distribution
         uses: wzieba/Firebase-Distribution-Github-Action@v1
