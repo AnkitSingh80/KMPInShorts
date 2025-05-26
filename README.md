@@ -1,12 +1,3 @@
-# DailyPulse
-Educational repo offered as material in the course Kotlin Multiplatform Masterclass.
-The course aims to teach the state-of-art KMP development. 
-
-Daily Pulse includes a native Android and a native iOS apps, where the business logic and inftrastructure is shared in a KMP module.
-
-Daily Pulse is using the news API to fetch, cache and display the top US business articles. It also contains a screen to diaply the list of news sources we use to fetch the articles from.
-Finally, it contains third screen to display informartion regarding the user's device.
-
 ## Tech Stack
 It is a prototype app based on the following technologies and patterns:
 
@@ -50,6 +41,3 @@ License
   See the License for the specific language governing permissions and
   limitations under the License.
   ```
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/petrosefth)
-
