@@ -1,9 +1,13 @@
 package com.example.shorts.database
 
+import com.example.shorts.sqldelight.AppDatabase
 import com.squareup.sqldelight.db.SqlDriver
+import com.squareup.sqldelight.sqlite.driver.JdbcSqliteDriver
 
 actual class DatabaseDriverFactory {
     actual fun createDriver(): SqlDriver {
-        TODO("Not yet implemented")
+        val driver = JdbcSqliteDriver(JdbcSqliteDriver.IN_MEMORY)
+        AppDatabase.Schema.create(driver)
+        return driver
     }
 }
