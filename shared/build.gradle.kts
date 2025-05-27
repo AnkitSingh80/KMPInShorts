@@ -12,7 +12,7 @@ val skipNative = project.findProperty("skipNative") == "true"
 @OptIn(org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi::class)
 kotlin {
     targetHierarchy.default()
-
+    jvm()
     androidTarget {
         compilations.all {
             kotlinOptions {
