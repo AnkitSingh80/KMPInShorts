@@ -1,5 +1,6 @@
 package com.example.shorts.articles
 
+import ArticlesLocalDataSource
 import com.example.shorts.DatabaseHelper
 import com.example.shorts.database.News
 import comexampleshortssqldelight.Notification
@@ -7,7 +8,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 
 class ArticlesRepositoryImpl(
-    private val dbHelper: DatabaseHelper,
+    private val dbHelper: ArticlesLocalDataSource,
     private val service: ArticlesService
 ) : ArticlesRepository {
 

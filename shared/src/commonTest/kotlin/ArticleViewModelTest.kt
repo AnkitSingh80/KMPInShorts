@@ -3,7 +3,6 @@
 import app.cash.turbine.test
 import assertk.assertThat
 import assertk.assertions.isEqualTo
-import com.example.shorts.DatabaseHelper
 import com.example.shorts.articles.ArticlesRepository
 import com.example.shorts.articles.ArticlesRepositoryImpl
 import com.example.shorts.articles.ArticlesService
@@ -31,6 +30,7 @@ class ArticleViewModelTest {
     private lateinit var viewModel: ArticlesViewModel
     private lateinit var repository: ArticlesRepository
     private lateinit var articlesService: ArticlesService
+    private lateinit var fakeArticlesLocalDataSource: FakeArticlesLocalDataSource
     //private val mockDbHelper = mockk<DatabaseHelper>(relaxed = true)
 
     private var responseData = HttpResponseData(
@@ -63,11 +63,13 @@ class ArticleViewModelTest {
             }
         )
 
+        fakeArticlesLocalDataSource = FakeArticlesLocalDataSource()
         articlesService = ArticlesService(httpClient)
-       // repository = ArticlesRepositoryImpl(articlesService, )
+        repository = ArticlesRepositoryImpl(fakeArticlesLocalDataSource, articlesService)
         viewModel = ArticlesViewModel(repository)
     }
 
+    @OptIn(ExperimentalCoroutinesApi::class)
     @AfterTest
     fun tearDown() {
         Dispatchers.resetMain()
