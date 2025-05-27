@@ -24,7 +24,6 @@ import kotlin.test.BeforeTest
 import kotlin.test.Test
 
 class ArticleViewModelTest {
-
     private lateinit var httpClient: HttpClient
     private val testDispatcher = UnconfinedTestDispatcher()
     private lateinit var viewModel: ArticlesViewModel
