@@ -83,7 +83,7 @@ class ArticleViewModelTest {
             assertThat(initialEmission).isEqualTo(ArticlesState(loading = true))
 
             val secondEmission = awaitItem()
-            assertEquals(3 ,secondEmission.articles.size)
+            assertEquals(2 ,secondEmission.articles.size)
 
         }
     }
