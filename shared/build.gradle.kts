@@ -22,7 +22,7 @@ kotlin {
         }
     }
 
-    if(!skipNative) {
+    if (!skipNative) {
         listOf(
             iosX64(),
             iosArm64(),
@@ -73,25 +73,11 @@ kotlin {
             }
         }
 
-      /*  val jsMain by getting {
+        val jvmMain by getting {
             dependencies {
-                implementation(libs.compose.html.core)
-                implementation(libs.kobweb.silk)
-                implementation(libs.web.core)
-                implementation(libs.kobweb.core)
-                implementation(libs.kotlinx.serialization)
-                implementation(project(":worker"))
-            }
-        }*/
 
-       /* val jvmMain by getting {
-            dependencies {
-                implementation(libs.kobweb.api)
-                implementation(libs.kmongo.coroutine)
-                implementation(libs.kmongo.serialization)
-                implementation(libs.kotlinx.serialization)
             }
-        }*/
+        }
 
         val commonTest by getting {
             dependencies {
@@ -102,7 +88,6 @@ kotlin {
                 implementation(libs.turbine)
             }
         }
-
     }
 }
 
