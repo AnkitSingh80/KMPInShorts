@@ -22,6 +22,7 @@ import kotlinx.coroutines.test.setMain
 import kotlin.test.AfterTest
 import kotlin.test.BeforeTest
 import kotlin.test.Test
+import kotlin.test.assertEquals
 
 class ArticleViewModelTest {
     private lateinit var httpClient: HttpClient
@@ -80,6 +81,9 @@ class ArticleViewModelTest {
         viewModel.articlesState.test {
             val initialEmission = awaitItem()
             assertThat(initialEmission).isEqualTo(ArticlesState(loading = true))
+
+            val secondEmission = awaitItem()
+            assertEquals(3 ,secondEmission.articles.size)
 
         }
     }
