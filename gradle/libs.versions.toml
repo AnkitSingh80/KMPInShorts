@@ -23,6 +23,7 @@ compose_jet = "1.5.12"
 sqlite = "2.5.0-alpha08"
 delight = "1.5.5"
 jetbrains-compose = "1.7.1"
+sqliteDriver = "2.0.1"
 uuid = "0.7.0"
 kobweb = "0.20.2"
 kmongo-coroutine = "5.2.0"
@@ -33,9 +34,13 @@ junitJupiter = "5.8.1"
 assertk = "0.28.1"
 turbine = "1.2.0"
 coroutines-test = "1.10.2"
+kotlinx-coroutines = "1.7.3"
+
 
 [libraries]
-
+ktor-client_mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktorClient" }
+coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
+sqlite-driver = { module = "app.cash.sqldelight:sqlite-driver", version.ref = "sqliteDriver" }
 compose-html-core = { module = "org.jetbrains.compose.html:html-core", version.ref = "jetbrains-compose" }
 kobweb-api = { module = "com.varabyte.kobweb:kobweb-api", version.ref = "kobweb" }
 kobweb-core = { module = "com.varabyte.kobweb:kobweb-core ", version.ref = "kobweb" }
@@ -43,10 +48,8 @@ kobweb-silk = { module = "com.varabyte.kobweb:kobweb-silk", version.ref = "kobwe
 kobweb-worker = { module = "com.varabyte.kobweb:kobweb-worker", version.ref = "kobweb" }
 kobwebx-markdown = { module = "com.varabyte.kobwebx:kobwebx-markdown", version.ref = "kobweb" }
 kobwebx-serialization-kotlinx = { module = "com.varabyte.kobwebx:kobwebx-serialization-kotlinx", version.ref = "kobweb" }
-ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktorClient" }
 turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
 assertk = { module = "com.willowtreeapps.assertk:assertk", version.ref = "assertk" }
-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines-test" }
 
 
 silk-foundation = { module = "com.varabyte.kobweb:silk-foundation", version.ref = "kobweb" }
@@ -73,9 +76,7 @@ compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview"
 compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
 compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
-
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
-
 kotlinx-uuid = { module = "org.jetbrains.kotlinx:kotlinx-uuid", version.ref = "kotlinxUuidVersion" }
 ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktorClient" }
 ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktorClient" }
@@ -89,6 +90,7 @@ runtime = { module = "com.squareup.sqldelight:runtime", version.ref = "runtime" 
 sqlite-bundled = { module = "androidx.sqlite:sqlite-bundled", version.ref = "sqlite" }
 uuid = { module = "com.benasher44:uuid", version.ref = "uuid" }
 junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junitJupiter" }
+mockk = { module = "io.mockk:mockk", version = "1.13.7" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

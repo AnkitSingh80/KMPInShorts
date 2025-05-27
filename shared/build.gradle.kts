@@ -102,6 +102,7 @@ kotlin {
                 implementation(libs.turbine)
             }
         }
+
     }
 }
 
@@ -117,10 +118,6 @@ android {
     defaultConfig {
         minSdk = 24
     }
-}
-dependencies {
-    testImplementation(libs.junit.jupiter)
-    testImplementation(libs.junit.jupiter)
 }
 
 

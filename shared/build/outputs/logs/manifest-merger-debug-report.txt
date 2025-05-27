@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9183393861554135604.xml:2:13-83
-INJECTED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9183393861554135604.xml:2:13-83
+ADDED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10089925182698570147.xml:2:13-83
+INJECTED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10089925182698570147.xml:2:13-83
 	package
-		INJECTED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9183393861554135604.xml
+		INJECTED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10089925182698570147.xml
 	xmlns:android
-		ADDED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9183393861554135604.xml:2:23-81
+		ADDED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10089925182698570147.xml:2:23-81
 uses-sdk
-INJECTED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9183393861554135604.xml reason: use-sdk injection requested
-INJECTED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9183393861554135604.xml
-INJECTED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9183393861554135604.xml
+INJECTED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10089925182698570147.xml reason: use-sdk injection requested
+INJECTED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10089925182698570147.xml
+INJECTED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10089925182698570147.xml
 	android:targetSdkVersion
-		INJECTED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9183393861554135604.xml
+		INJECTED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10089925182698570147.xml
 	android:minSdkVersion
-		INJECTED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9183393861554135604.xml
+		INJECTED from /Users/ankit/KMPInShorts/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10089925182698570147.xml

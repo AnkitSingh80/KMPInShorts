@@ -4,24 +4,7 @@
             "outputFile": "com.example.shorts.android.androidApp-mergeDebugResources-56:/values-uk/values-uk.xml",
             "map": [
                 {
-                    "source": "/Users/ankit/.gradle/caches/8.9/transforms/4bea09097f31256d47aa342a5e08f23e/transformed/foundation-release/res/values-uk/values-uk.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,152",
-                        "endColumns": "96,99",
-                        "endOffsets": "147,247"
-                    },
-                    "to": {
-                        "startLines": "108,109",
-                        "startColumns": "4,4",
-                        "startOffsets": "10828,10925",
-                        "endColumns": "96,99",
-                        "endOffsets": "10920,11020"
-                    }
-                },
-                {
-                    "source": "/Users/ankit/.gradle/caches/8.9/transforms/9e266f4439f26db3e40d9a880133bc49/transformed/material3-1.1.2/res/values-uk/values-uk.xml",
+                    "source": "/Users/ankit/.gradle/caches/8.9/transforms/94bac71ca92db263d13a2f707f42533d/transformed/material3-1.1.2/res/values-uk/values-uk.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,24 +21,24 @@
                     }
                 },
                 {
-                    "source": "/Users/ankit/.gradle/caches/8.9/transforms/b2b9327e68074f28c34b1786066bece5/transformed/core-1.13.0/res/values-uk/values-uk.xml",
+                    "source": "/Users/ankit/.gradle/caches/8.9/transforms/3db49b6a4d243fadf462e36a0eb9124e/transformed/foundation-release/res/values-uk/values-uk.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,155,257,358,459,564,669,782",
-                        "endColumns": "99,101,100,100,104,104,112,100",
-                        "endOffsets": "150,252,353,454,559,664,777,878"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,152",
+                        "endColumns": "96,99",
+                        "endOffsets": "147,247"
                     },
                     "to": {
-                        "startLines": "33,34,35,36,37,38,39,91",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3288,3388,3490,3591,3692,3797,3902,9251",
-                        "endColumns": "99,101,100,100,104,104,112,100",
-                        "endOffsets": "3383,3485,3586,3687,3792,3897,4010,9347"
+                        "startLines": "108,109",
+                        "startColumns": "4,4",
+                        "startOffsets": "10828,10925",
+                        "endColumns": "96,99",
+                        "endOffsets": "10920,11020"
                     }
                 },
                 {
-                    "source": "/Users/ankit/.gradle/caches/8.9/transforms/064634ecf33acc2f4565616d44bf6f73/transformed/appcompat-1.7.0/res/values-uk/values-uk.xml",
+                    "source": "/Users/ankit/.gradle/caches/8.9/transforms/bc4aa72d00f80b32b560fe68d11559e4/transformed/appcompat-1.7.0/res/values-uk/values-uk.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -72,7 +55,24 @@
                     }
                 },
                 {
-                    "source": "/Users/ankit/.gradle/caches/8.9/transforms/27aa3a21ae0d4d87c6558f28a0f08e5c/transformed/ui-release/res/values-uk/values-uk.xml",
+                    "source": "/Users/ankit/.gradle/caches/8.9/transforms/fbf2edd0a3d74df7009765206c092244/transformed/core-1.13.0/res/values-uk/values-uk.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,155,257,358,459,564,669,782",
+                        "endColumns": "99,101,100,100,104,104,112,100",
+                        "endOffsets": "150,252,353,454,559,664,777,878"
+                    },
+                    "to": {
+                        "startLines": "33,34,35,36,37,38,39,91",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3288,3388,3490,3591,3692,3797,3902,9251",
+                        "endColumns": "99,101,100,100,104,104,112,100",
+                        "endOffsets": "3383,3485,3586,3687,3792,3897,4010,9347"
+                    }
+                },
+                {
+                    "source": "/Users/ankit/.gradle/caches/8.9/transforms/d8326c55216d35d2c17f4dfa275c5c35/transformed/ui-release/res/values-uk/values-uk.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
