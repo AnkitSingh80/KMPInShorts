@@ -1,5 +1,6 @@
 package com.example.shorts.di
 
+import ArticlesLocalDataSource
 import com.example.shorts.DatabaseHelper
 import com.example.shorts.articles.ArticlesRepository
 import com.example.shorts.articles.ArticlesRepositoryImpl
@@ -24,8 +25,8 @@ val sharedModule = module {
             }
         }
     }
+    single<ArticlesLocalDataSource> { DatabaseHelper(get()) }
     single { ArticlesService(get()) }
-    single { DatabaseHelper(get()) }
     single<ArticlesRepository> { ArticlesRepositoryImpl(get(), get()) }
     single { ArticlesViewModel(get())}
 }

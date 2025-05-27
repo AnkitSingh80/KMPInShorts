@@ -64,7 +64,7 @@ class ArticleViewModelTest {
         )
 
         articlesService = ArticlesService(httpClient)
-       // repository = ArticlesRepositoryImpl(articlesService, )
+       repository = ArticlesRepositoryImpl(FakeArticlesLocalDataSource(),articlesService, )
         viewModel = ArticlesViewModel(repository)
     }
 
@@ -79,6 +79,9 @@ class ArticleViewModelTest {
         viewModel.articlesState.test {
             val initialEmission = awaitItem()
             assertThat(initialEmission).isEqualTo(ArticlesState(loading = true))
+
+
+          //  val initialEmission = awaitItem()
 
         }
     }
