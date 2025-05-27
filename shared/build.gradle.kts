@@ -96,8 +96,15 @@ kotlin {
         val commonTest by getting {
             dependencies {
                 implementation(libs.kotlin.test)
+                implementation(libs.kotlin.test)
+                implementation(libs.ktor.client.mock)
+                implementation(libs.coroutines.test)
+                implementation(libs.turbine)
+                implementation(libs.assertk)
+               // implementation(libs.mockk)
             }
         }
+
     }
 }
 

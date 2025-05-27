@@ -1,6 +1,8 @@
 package com.example.shorts.di
 
 import com.example.shorts.DatabaseHelper
+import com.example.shorts.articles.ArticlesRepository
+import com.example.shorts.articles.ArticlesRepositoryImpl
 import com.example.shorts.articles.ArticlesService
 import com.example.shorts.articles.ArticlesViewModel
 import io.ktor.client.HttpClient
@@ -24,6 +26,7 @@ val sharedModule = module {
     }
     single { ArticlesService(get()) }
     single { DatabaseHelper(get()) }
-    single { ArticlesViewModel(get()) }
+    single<ArticlesRepository> { ArticlesRepositoryImpl(get(), get()) }
+    single { ArticlesViewModel(get())}
 }
 

@@ -22,14 +22,24 @@ compose_jet = "1.5.12"
 sqlite = "2.5.0-alpha08"
 delight = "1.5.5"
 jetbrains-compose = "1.7.1"
+sqliteDriver = "2.0.1"
 uuid = "0.7.0"
 kobweb = "0.20.2"
 kmongo-coroutine = "5.2.0"
 serialization = "1.8.0"
 kmongo = "4.9.0"
 webcore = "1.5.2"
-[libraries]
+kotlinx-coroutines = "1.7.3"
+turbine = "1.0.0"
+assertk = "0.25"
 
+
+[libraries]
+ktor-client_mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktorClient" }
+coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
+sqlite-driver = { module = "app.cash.sqldelight:sqlite-driver", version.ref = "sqliteDriver" }
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+assertk = { module = "com.willowtreeapps.assertk:assertk", version.ref = "assertk" }
 compose-html-core = { module = "org.jetbrains.compose.html:html-core", version.ref = "jetbrains-compose" }
 kobweb-api = { module = "com.varabyte.kobweb:kobweb-api", version.ref = "kobweb" }
 kobweb-core = { module = "com.varabyte.kobweb:kobweb-core ", version.ref = "kobweb" }
@@ -61,9 +71,7 @@ compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview"
 compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
 compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
-
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
-
 kotlinx-uuid = { module = "org.jetbrains.kotlinx:kotlinx-uuid", version.ref = "kotlinxUuidVersion" }
 ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktorClient" }
 ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktorClient" }
@@ -76,6 +84,7 @@ room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 runtime = { module = "com.squareup.sqldelight:runtime", version.ref = "runtime" }
 sqlite-bundled = { module = "androidx.sqlite:sqlite-bundled", version.ref = "sqlite" }
 uuid = { module = "com.benasher44:uuid", version.ref = "uuid" }
+mockk = { module = "io.mockk:mockk", version = "1.13.7" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
