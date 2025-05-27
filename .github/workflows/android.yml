@@ -37,6 +37,9 @@ jobs:
       - name: Clean project
         run: ./gradlew clean
 
+      - name: Run KMP shared tests (commonTest via jvmTest)
+        run: ./gradlew :shared:jvmTest
+
       - name: Build debug APK with refreshed dependencies
         run: ./gradlew --refresh-dependencies :androidApp:assembleDebug
 
