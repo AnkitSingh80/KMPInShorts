@@ -3,11 +3,7 @@ name: Debug APK CI
 on:
   push:
     branches:
-      - master
-      - develop
-      - feature/*
-      - dm_master
-      - articletest
+      - '**'
 
 jobs:
   build:
